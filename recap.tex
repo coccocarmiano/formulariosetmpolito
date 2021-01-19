@@ -1,6 +1,6 @@
 \documentclass[12pt]{extarticle}
-    \title{\textbf{Gummi 0.8.0}}
-    \author{Alexander van der Meij}
+    \title{FormularioSetm}
+    \author{{Cocco}}
     \date{}
 \usepackage[margin=2cm]{geometry} 
 \begin{document}
@@ -8,17 +8,20 @@
 {\bf \huge Misure}
 \section{Errori}.
 
-{\bf Media:} $ \displaystyle \mu = \frac{1}{N}\sum_i x_i $ \ \ \ {\bf Varianza:} $\displaystyle \sigma^2 = \frac{1}{N-1}\sum (x_i - \mu)^2 $ 
+%{\bf Media:} $ \displaystyle \mu = \frac{1}{N}\sum_i x_i $ \ \ \ {\bf Varianza:} $\displaystyle \sigma^2 = \frac{1}{N-1}\sum (x_i - \mu)^2 $ 
 
 {\bf Incertezza Tipica:} $\pm (\% lettura + \% fondo-scala) $
 
-L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R = (4700 \pm 47) \Omega $
+{\bf Strumento di classe x:} lo strumento ha una precisione pari ad x\% del fondo-scala
 
-{\bf Errore Qualunque (Derivate Parziali):} $\displaystyle y = f(x_1, x_2, ...) \to \delta y  = \sum_i \Bigg |\frac{\partial f(x)}{\partial x_i}\Bigg |_{x=x_{mis}} \delta x_i $
+%L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R = (4700 \pm 47) \Omega $
+
+{\bf Errore Qualunque (Derivate Parziali):} $\displaystyle y = f(x_1, x_2, ...) \to \delta y  = \sum_i \Bigg |\frac{\partial f(\vec{x})}{\partial x_i}\Bigg |_{x=x_{mis}} \delta x_i $
 
 {\bf Errore Relativo:} $y$ misura $\displaystyle\to \epsilon_r = \frac{\delta y}{y} \ \ (\epsilon_{r, \%} = 100\cdot\epsilon_r)$
 
-{\bf Somma/Differenza:} $y = a \pm b \to \delta y = \delta a + \delta b$ 
+{\bf Somma/Differenza:} $y = a \pm b \to \delta y = \delta a + \delta b$ gate
+
 
 {\bf Prodotto/Divisione:} $\displaystyle y = a\cdot b^{\pm 1} \to \epsilon_y = \epsilon_a + \epsilon_b$
 
@@ -26,7 +29,9 @@ L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R 
 
 \section{Attrezzature}. 
 
-{\bf Full-Scale Range:} $ FSR = V_{max} - V_{min} $ \ \ \ {\bf Quantizzazione su N bit:} $ N = log_2(M) $
+%{\bf Full-Scale Range:} $ FSR = V_{max} - V_{min} $ 
+
+{\bf Quantizzazione su N bit:} $ N = log_2(M) $
 
 {\bf Uscita Ricostruita:} $\displaystyle y = \sum_{i=0}^{n-1} 2^i\cdot B_i \ \ (B = 0 \lor B = 1)$ \ \ \ {\bf MSB:} $ B_{n-1} $ \ {\bf LSB:} $ B_0 $ 
 
@@ -48,13 +53,17 @@ L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R 
 
 {\bf Riscaldamento di un Resistore:} $\displaystyle T_{fin} - T_{amb} = R_{termica}\cdot P_{dissipata}$
 
-{\bf Ponte di Wheatstone:} ? \ \ \ {\bf Potenza} $\displaystyle P = \frac{v_{eff}^2}{R} $, per segnali sinusoidali $\displaystyle v_{eff} = \frac{A}{\sqrt{2}}$
+{\bf Ponte di Wheatstone:} All'equilibrio, la ddp ai due nodi centrali è nulla 
+
+{\bf Potenza} $\displaystyle P = \frac{v_{eff}^2}{R} $, per segnali sinusoidali $\displaystyle v_{eff} = \frac{A}{\sqrt{2}}$
 
 {\bf Valor-Medio Segnale Raddrizzato (Singola/Doppia Semionda):}  $\displaystyle v_m = \frac{2\cdot V_p}{\pi} \neq v_{rms}$ 
 
 {\bf Valore Efficace Segnale Raddrizzato:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{2}} = k_s\cdot\frac{2\cdot V_p}{\pi}$
 
 {\bf Costante Strumentale:} $\displaystyle k_s = 1.11 $ (semionda doppia) / $\displaystyle k_s = 2.22 $ (semionda singola)
+
+{\bf Condensatore in ingresso:} Rimuove la componente continua, cioè il segnale viene scalato in basso per un valore pari al suo valor medio
 
 
 \newpage
@@ -63,10 +72,9 @@ L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R 
 \setcounter{section}{0}
 \section{Segnali}.
 
-{\bf Nota:} Convenzionalmente: lettera maiuscola (e.g. V) $\to$ componente costante, lettera minuscola (e.g. v) $to$ componente variabile nel tempo.
-\\\\
-.
-
+%{\bf Nota:} Convenzionalmente: lettera maiuscola (e.g. V) $\to$ componente costante, lettera minuscola (e.g. v) $to$ componente variabile nel tempo.
+%\\\\
+%.
 
 {\bf Signal-to-Noise Ratio:} $\displaystyle SNR = \frac{P_{segnale}}{P_{rumore}} = \frac{v^2}{n^2}$ 
 
@@ -76,7 +84,7 @@ L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R 
 
 \section{Diodi}.
 
-{\bf Diodo Reale:} $\displaystyle i_D = I_s(e^{\frac{v_D}{\eta V_T}}- 1)$, curva quasi verticale per $ v_D > V_\gamma \simeq 0.7 \ V $
+{\bf Diodo Reale:} $\displaystyle i_D = I_s(e^{\frac{v_D}{\eta V_T}}- 1)$, curva quasi verticale per $ v_D > V_\gamma \ $(spesso $\simeq 0.7 \ V $)$ $
 
 {\bf Diodo Ideale:} $i_D > 0 \to v_D = 0, ON \ \big | \ v_D < 0 \to i_D = 0, OFF $ (nel circuito: generatore)
 
@@ -84,10 +92,9 @@ L'incertezza va riportata con {\bf al più} due cifre significative. (e.g.: $ R 
 
 {\bf Resistenza di un Diodo (Piccolo Segnale)}: $\displaystyle g_D = \frac{1}{r_D} = \frac{I_D}{\eta V_T}$
 
-
 \section{Transistors}.
 
-{\bf Corrente di Gate:} $i_G = 0$ {\bf sempre}.
+{\bf Corrente di Gate:} $i_G = 0$ {\bf sempre} per NMOS e PMOS.
 
 {\bf Corrente di Drain (nMOS):} 
 
@@ -105,13 +112,13 @@ $\displaystyle OFF \to i_D = 0 \ \big | \  ON \to i_D = \beta v_{DS}(v_{GS}-V_{T
 
 {\bf Efficienza Amplificatore Potenza:} $\displaystyle \eta = \frac{P_{out}}{P_{al}+P_{in}} \simeq \frac{P_{out}}{P_{al}}$ 
 
-{\bf Common Source:} $ A_v = -g_m(R || r_o), \ R_{in} \to \infty \ R_{out} = R || r_o$
+{\bf Common Source:} $ A_v < 0, \ R_{in} \to \infty \ R_{out} = $ finita 
 
-{\bf Common Drain:} $ A_v = \displaystyle \frac{g_mR'}{1+g_mR'} < \ R_{in} \to \infty \ R_{out} \simeq \frac{1}{g_m}$	
+{\bf Common Drain:} $ A_v < 1, \ R_{in} \to \infty \ R_{out} \simeq \frac{1}{g_m}$	
 
 {\bf Common Gate:} $ A_v \simeq g_m(R || r_o) \ R_{in} \simeq \frac{1}{g_m} \ R_{out} = R || r_o$ 
 
-{\bf Sia PMOS che NMOS:} il Gate è sempre la "sbarra", il Source sempre dove sta la corrente, il Drain è l'altro per esclusione
+{\bf Sia PMOS che NMOS:} il Source è sempre dov'è la corrente, il Gate è sempre la sbarra, il Drain sempre il rimanente
 
 \section{Amplificatori Operazionali}.
 
@@ -119,9 +126,9 @@ $\displaystyle OFF \to i_D = 0 \ \big | \  ON \to i_D = \beta v_{DS}(v_{GS}-V_{T
 
 {\bf Amplificatore di Tensione:} $\displaystyle A_v = 1+\frac{R_2}{R_1}, R_{in} \to \infty, R_{out} \to 0$
 
-{\bf Amplificatore di Transconduttanza:} $\displaystyle G_m = \frac{1}{R}, R_{in} \to \infty, R_{out} \to \infty$
+{\bf Amplificatore di Transconduttanza:} $\displaystyle G_m = \frac{1}{R} \ $(quella in retroazione)$, R_{in} \to \infty, R_{out} \to \infty$
 
-{\bf Amplificatore di Transresistenza: } $\displaystyle R_m = R, R_{in} \to 0, R_{out} \to 0$
+{\bf Amplificatore di Transresistenza: } $\displaystyle R_m = R \ $(quella in retroazione)$, R_{in} \to 0, R_{out} \to 0$
 
 {\bf Amplificatore di Corrente:} $\displaystyle A_i = 1+\frac{R_2}{R_1}, R_{in} \to 0, R_{out} \to \infty$
 
@@ -134,7 +141,9 @@ $\displaystyle OFF \to i_D = 0 \ \big | \  ON \to i_D = \beta v_{DS}(v_{GS}-V_{T
 {\bf Derivatore:} Condensatore su $R_1$ (Per tutti e 4: $R_{out} = 0$)
 
 
-{\bf Sommatore Generalizzato:} $\displaystyle v_{out} = \frac{\sum_{i=0}^M G_{i^-} + G_f}{\sum_{i=0}^N G_{i^+}} \sum_{i=1}^N \frac{G_{i^+}}{G_f}v_{i^+}-\sum_{i=1}^M\frac{G_{i^-}}{G_f}v_{i^-}$ (Millman...)
+{\bf Sommatore Generalizzato:} $\displaystyle v_{out} = \frac{\sum_{i=0}^M G_{i^-} + G_f}{\sum_{i=0}^N G_{i^+}} \sum_{i=1}^N \frac{G_{i^+}}{G_f}v_{i^+}-\sum_{i=1}^M\frac{G_{i^-}}{G_f}v_{i^-}$ 
+
+(Non usare questa formula, meglio sovrapposizione e/o Millman)
 
 {\bf Common-Mode Rejection Ratio (CMRR):} $\displaystyle \bigg |\frac{A_d}{A_{cm}} \bigg |, \ v_{cm} = \frac{v^++v^-}{2}, \ v_d = v^+-v^-$
 
