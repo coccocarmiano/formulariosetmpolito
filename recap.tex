@@ -31,11 +31,11 @@
 
 %{\bf Full-Scale Range:} $ FSR = V_{max} - V_{min} $ 
 
-{\bf Quantizzazione su N bit:} $ N = log_2(M) $
+% {\bf Quantizzazione su N bit:} $ N = log_2(M) $
 
-{\bf Uscita Ricostruita:} $\displaystyle y = \sum_{i=0}^{n-1} 2^i\cdot B_i \ \ (B = 0 \lor B = 1)$ \ \ \ {\bf MSB:} $ B_{n-1} $ \ {\bf LSB:} $ B_0 $ 
+% {\bf Uscita Ricostruita:} $\displaystyle y = \sum_{i=0}^{n-1} 2^i\cdot B_i \ \ (B = 0 \lor B = 1)$ \ \ \ {\bf MSB:} $ B_{n-1} $ \ {\bf LSB:} $ B_0 $ 
 
-{\bf Teorema del Campionamento (B banda del segnale):} $ f_c \ge 2\cdot B $
+%{\bf Teorema del Campionamento (B banda del segnale):} $ f_c \ge 2\cdot B $
 
 {\bf Errore di Lettura (Parallasse):} valore di una "tacchetta"
 
@@ -43,11 +43,18 @@
 
 {\bf Relazione Salita-Visualizzato:} $\displaystyle t_{s, visualizzato}^2 = t_{s, segnale}^2 + t_{s, circuito}^2 + t_{s, oscilloscopio}^2$
 
+Solitamente il $t_{so}$ è trascurabile.
+
 {\bf Valor-Medio:} $\displaystyle v_m = \frac{1}{T} \int_{t_0}^{t_0+T} v(t)dt $ {\bf Valore Efficace:} $\displaystyle v_{rms}= \sqrt{\frac{1}{T} \int_{t_0}^{t_0+T} v^2(t)dt}$
 
 {\bf Duty-Cycle:} $\displaystyle D = \frac{t_{alto}}{T}$ \ \ {\bf Sensibilità:} $\displaystyle k_v = n\frac{mV}{div}$ \ \ {\bf Lettura:} $\displaystyle n_{div} = n \ div \to  V_{pp} = k_v\cdot n_{div}$
 
 {\bf Voltmetro a Doppia Rampa:} $\displaystyle V_x = -\frac{T_2}{T_1}V_{rif}$ \ {\bf Incertezza di Quantizzazione:} $\delta f_q = \frac{1}{T_{mis}}$
+
+
+{\bf Frequenzimetro a Misura Diretta:} $\displaystyle f_x = \frac{1}{t_x} = \frac{n}{T_c}, \ \ T_x = nT_c$
+
+{\bf Risoluzione:} $\displaystyle \delta f_x = \frac{1}{T_c}$ \ \ \ {\bf Risoluzione Relativa:} $\displaystyle \frac{\delta f_x}{f_x} = \frac{1}{n}$
 
 {\bf Scelta di $T_1$:} $n(t)$ ruomore di periodo $T \to T_1 = T$ (spesso 50 Hz)
 
@@ -57,13 +64,21 @@
 
 {\bf Potenza} $\displaystyle P = \frac{v_{eff}^2}{R} $, per segnali sinusoidali $\displaystyle v_{eff} = \frac{A}{\sqrt{2}}$
 
-{\bf Valor-Medio Segnale Raddrizzato (Singola/Doppia Semionda):}  $\displaystyle v_m = \frac{2\cdot V_p}{\pi} \neq v_{rms}$ 
+%{\bf Valor-Medio Segnale Raddrizzato (Singola/Doppia Semionda):}  $\displaystyle v_m = \frac{2\cdot V_p}{\pi} \neq v_{rms}$ 
 
-{\bf Valore Efficace Segnale Raddrizzato:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{2}} = k_s\cdot\frac{2\cdot V_p}{\pi}$
+%{\bf Valore Efficace Segnale Raddrizzato:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{2}} = k_s\cdot\frac{2\cdot V_p}{\pi}$
 
-{\bf Costante Strumentale:} $\displaystyle k_s = 1.11 $ (semionda doppia) / $\displaystyle k_s = 2.22 $ (semionda singola)
+{\bf Costante Strumentale:} $\displaystyle k_s = 1.11 $ (semionda doppia) | $\displaystyle k_s = 2.22 $ (semionda singola)
 
-{\bf Condensatore in ingresso:} Rimuove la componente continua, cioè il segnale viene scalato in basso per un valore pari al suo valor medio
+Gli strumenti spesso riportano il valore efficace di un segnale. Questo valore è pari alla
+
+costante strumentale moltiplicata per il suo valor medio. Ricordate, nel calcolo del valor medio, 
+
+che nel caso della semionda semplice la parte negativa del segnale viene azzerata.
+
+{\bf Condensatore in ingresso:} Rimuove la componente continua, cioè il segnale viene scalato 
+
+in basso per un valore pari al suo valor medio
 
 
 \newpage
