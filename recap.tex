@@ -99,7 +99,11 @@ in basso per un valore pari al suo valor medio
 
 \section{Diodi}.
 
-{\bf Diodo Reale:} $\displaystyle i_D = I_s(e^{\frac{v_D}{\eta V_T}}- 1)$, curva quasi verticale per $ v_D > V_\gamma \ $(spesso $\simeq 0.7 \ V $)$ $
+{\bf Polarizzazione Diretta:} $\displaystyle v_D > 0, i_D \to \infty $, curva verticale per $v_D > V_\gamma \simeq 0.6-0.7 \ V$
+
+{\bf Polarizzazione Inversa:} $\displaystyle v_D < 0, i_D$ satura a valori piccoli e negativi (pA-fA)
+
+{\bf Diodo Reale:} $\displaystyle i_D = I_s(e^{\frac{v_D}{\eta V_T}}- 1)$
 
 {\bf Diodo Ideale:} $i_D > 0 \to v_D = 0, ON \ \big | \ v_D < 0 \to i_D = 0, OFF $ (nel circuito: generatore)
 
@@ -109,9 +113,21 @@ in basso per un valore pari al suo valor medio
 
 \section{Transistors}.
 
-{\bf Corrente di Gate:} $i_G = 0$ {\bf sempre} per NMOS e PMOS.
+{\bf Corrente di Gate:} $i_G = 0$ in condizioni statiche per NMOS e PMOS. (BJT $> 0$)
 
-{\bf Corrente di Drain (nMOS):} 
+{\bf nMOS:} $\displaystyle v_{GS}, \ v_{DS}$ \ \ \ {\bf pMOS:} $\displaystyle v_{SG}, \ v_{SD}$
+
+{\bf "Trucco" Mnemonico:} Il {\bf S}ource è sempre dov'è la corrente. Il {\bf G}ate sempre la sbarra.
+
+Il {\bf D}rain il rimanente. Per capire se usare $v_{GS}$ o $v_{SG}$, bisogna posizionare due tensioni verso
+
+l'alto, una tra le due "gambe" del transistor (che sarà $v_{DS}$ o $v_{SD}$) e una tra Gate e Source
+
+(che sarà $v_{GS}$ o $v_{SG}$), ricordando che $v_{XY}$ è una tensione con la punta in X e la coda in Y.
+
+{\bf Condizioni Saturazione:} $\displaystyle v_{GS/SG} > V_{TH}, \ v_{DS/SD} > v_{GS/SG} - V_{TH} $
+
+{\bf Corrente di Drain (xMOS):} 
 
 $\displaystyle OFF \to i_D = 0 \ \big | \  ON \to i_D = \beta v_{DS}(v_{GS}-V_{TH}-\frac{v_{DS}}{2}) \ \big | \ SAT. \to i_D = \frac{\beta}{2}(v_{GS}-V_{TH})^2(1+\lambda v_{DS})$
 
@@ -131,9 +147,20 @@ $\displaystyle OFF \to i_D = 0 \ \big | \  ON \to i_D = \beta v_{DS}(v_{GS}-V_{T
 
 {\bf Common Drain:} $ A_v < 1, \ R_{in} \to \infty \ R_{out} \simeq \frac{1}{g_m}$	
 
-{\bf Common Gate:} $ A_v \simeq g_m(R || r_o) \ R_{in} \simeq \frac{1}{g_m} \ R_{out} = R || r_o$ 
+{\bf Common Gate:} $ A_v \simeq g_m(R || r_o) \ R_{in} \simeq \frac{1}{g_m} \ R_{out} = R || r_o$
 
-{\bf Sia PMOS che NMOS:} il Source è sempre dov'è la corrente, il Gate è sempre la sbarra, il Drain sempre il rimanente
+{\bf Effetti di Carico:} Uno stadio si comporta come un amplificatore con generatore pilotato.
+
+Trovata $R_{in}$ ed $R_{out}$, rappresenta il blocco centrale di un circuito di mezzo tra un 
+
+generatore in ingresso $v_{in}$ con resistenza $R_S$ e un'uscita $v_{out}$ con resistenza $R_L$. Si puo
+
+ricavare l'uscita $v_{out}$ in funzione dell'ingresso $v_{in}$ (e quindi la funzione di trasferimento $A_{v,s}$)
+
+eseguendo semplici partitori 
+
+Esempio: se lo stadio è un partitore di tensione, allora $\displaystyle v_{out} = v_{in}\frac{R_{in}}{R_{in}+R_S}A_v\frac{R_L}{R_L+R_{out}}$
+
 
 \section{Amplificatori Operazionali}.
 
@@ -161,6 +188,7 @@ $\displaystyle OFF \to i_D = 0 \ \big | \  ON \to i_D = \beta v_{DS}(v_{GS}-V_{T
 (Non usare questa formula, meglio sovrapposizione e/o Millman)
 
 {\bf Common-Mode Rejection Ratio (CMRR):} $\displaystyle \bigg |\frac{A_d}{A_{cm}} \bigg |, \ v_{cm} = \frac{v^++v^-}{2}, \ v_d = v^+-v^-$
+
 
 \section{Limiti Amplificatori Operazionali}.
 
