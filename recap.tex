@@ -47,7 +47,11 @@ Solitamente il $t_{so}$ è trascurabile.
 
 {\bf Valor-Medio:} $\displaystyle v_m = \frac{1}{T} \int_{t_0}^{t_0+T} v(t)dt $ {\bf Valore Efficace:} $\displaystyle v_{rms}= \sqrt{\frac{1}{T} \int_{t_0}^{t_0+T} v^2(t)dt}$
 
-{\bf Duty-Cycle:} $\displaystyle D = \frac{t_{alto}}{T}$ \ \ {\bf Sensibilità:} $\displaystyle k_v = n\frac{mV}{div}$ \ \ {\bf Lettura:} $\displaystyle n_{div} = n \ div \to  V_{pp} = k_v\cdot n_{div}$
+{\bf Duty-Cycle:} $\displaystyle D = \frac{t_{alto}}{T}$ 
+
+{\bf Sensibilità:} $\displaystyle (k_v)$ "altezza", solitamente in mV, di un "quadratino".
+
+{\bf Lettura:} $\displaystyle V_{pp} $ del segnale, ottenuta come $\displaystyle k_v\cdot n_{div}, \ n_{div}$ altezza del segnale in "quadratini"
 
 {\bf Voltmetro a Doppia Rampa:} $\displaystyle V_x = -\frac{T_2}{T_1}V_{rif}$ \ {\bf Incertezza di Quantizzazione:} $\delta f_q = \frac{1}{T_{mis}}$
 
@@ -72,16 +76,25 @@ Solitamente il $t_{so}$ è trascurabile.
 
 Gli strumenti spesso riportano il valore efficace di un segnale. Questo valore è pari alla
 
-costante strumentale moltiplicata per il suo valor medio. Ricordate, nel calcolo del valor medio, 
+costante strumentale moltiplicata per valor medio del segnale. 
 
-che nel caso della semionda semplice la parte negativa del segnale viene azzerata.
+{\bf !} Nel calcolo del valor medio con voltmetro a semionda semplice della semionda semplice la 
 
-{\bf Condensatore in ingresso:} Rimuove la componente continua, cioè il segnale viene scalato 
-
-in basso per un valore pari al suo valor medio
-
-
+parte negativa del segnale viene azzerata.
 \newpage
+
+{\bf Condensatore in ingresso / Voltmetri TRMS:} I voltmetri TRMS restituiscono la lettura
+
+reale del valore efficace di un segnale. Tuttavia vengono spesso {\bf accoppiati in AC} 
+
+(filtro sulla componente DC), riportando così il {\bf valore efficace del segnale originale
+
+traslato in basso del suo valor medio}.
+
+{\bf Onda Quadra:} $\displaystyle v_{eff} = V_p$ per {\bf qualunque} duty-cycle {\bf solo se} le ampiezze sono 
+
+simmetriche ( es. -5V e 5V).
+\\\\\\
 
 {\bf \Huge Elettronica}
 \setcounter{section}{0}
