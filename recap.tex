@@ -20,7 +20,7 @@
 
 {\bf Errore Relativo:} $y$ misura $\displaystyle\to \epsilon_r = \frac{\delta y}{y} \ \ (\epsilon_{r, \%} = 100\cdot\epsilon_r)$
 
-{\bf Somma/Differenza:} $y = a \pm b \to \delta y = \delta a + \delta b$ gate
+{\bf Somma/Differenza:} $y = a \pm b \to \delta y = \delta a + \delta b$
 
 
 {\bf Prodotto/Divisione:} $\displaystyle y = a\cdot b^{\pm 1} \to \epsilon_y = \epsilon_a + \epsilon_b$
@@ -91,35 +91,27 @@ reale del valore efficace di un segnale. Tuttavia vengono spesso {\bf accoppiati
 
 traslato in basso del suo valor medio}.
 
-{\bf Onda Quadra:} $\displaystyle v_{eff} = V_p$ per {\bf qualunque} duty-cycle {\bf solo se} le ampiezze sono 
+{\bf Valori Efficaci noti: solo} per ampiezze {\bf simmetriche} ($-V_p \to V_p, \ -5V \to 5V, ...$):
 
-simmetriche ( es. -5V e 5V).
+{\bf Onda Quadra:} $\displaystyle v_{eff} = V_p$ \ \ \ \ {\bf Sinusoidi:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{2}}$ \ \ \ \ {\bf Triangolari:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{3}}$
 
-{\bf Valori efficaci noti (per segnali compresi tra $\displaystyle -V_p$ e $\displaystyle V_p$):} 
-\begin{itemize}
-    \item {\bf Onda quadra:}  $\displaystyle v_{eff} = V_p$
-    \item {\bf Sinusoide:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{2}}$
-    \item {\bf Triangolare:} $\displaystyle v_{eff} = \frac{V_p}{\sqrt{3}}$
-\end{itemize}
 
-{\bf Circuito equivalente d'ingresso DSO:} è rappresentato dal parallelo tra 
+{\bf Circuito equivalente d'ingresso DSO:} è rappresentato dal parallelo tra un condensatore
 
-un condensatore (decine di $\displaystyle pF $) e una resistenza (solitamente $\displaystyle 1M\Omega $).
+(decine di $\displaystyle pF $) e una resistenza (solitamente $\displaystyle 1M\Omega $).
 \\\\\\
 
 {\bf \Huge Elettronica}
 \setcounter{section}{0}
 \section{Segnali}.
 
-%{\bf Nota:} Convenzionalmente: lettera maiuscola (e.g. V) $\to$ componente costante, lettera minuscola (e.g. v) $to$ componente variabile nel tempo.
-%\\\\
-%.
+
 
 {\bf Signal-to-Noise Ratio:} $\displaystyle SNR = \frac{P_{segnale}}{P_{rumore}} = \frac{v^2}{n^2}$ 
 
 {\bf SNR in dB:} $\displaystyle SNR_{dB} = 10log_{10}(SNR) = 20log_{10}(\frac{v}{n})$
 
-{\bf Errore di Quantizzazione:} $\displaystyle \epsilon_q = \frac{S}{2^N+1} = \frac{1}{2}LSB $, con S dinamica del segnale
+{\bf Errore di Quantizzazione:} $\displaystyle \epsilon_q = \frac{S}{2^{N+1}} = \frac{1}{2}LSB $, con S dinamica del segnale
 
 \section{Diodi}.
 
