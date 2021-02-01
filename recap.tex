@@ -210,11 +210,19 @@ Esempio: se lo stadio è un partitore di tensione, allora $\displaystyle v_{out}
 
 {\bf Circuito Eq. in Linearità:} $\displaystyle v_{out} = A_dv_d +A_{cm}v_{cm}+A_{ps}v_{ps}$
 
-{\bf Amplificazione Differenziale Finita:} $\displaystyle A_v = \frac{\beta A_d}{1+\beta A_d}\frac{1}{\beta} \to \frac{1}{\beta} = 1+\frac{R_2}{R_1}$ se $A_d \to \infty$
+{\bf Amplificazione Differenziale Finita:} $\displaystyle A_v = \frac{\beta A_d}{1+\beta A_d}\frac{1}{\beta} = \frac{1}{\beta}$ se $A_d \to \infty$
 
-{\bf Banda Amplificazione:} $\displaystyle B = \beta f_T$ \ \ {\bf Parametro Beta:} $\displaystyle \beta = -\frac{v_d}{\hat{e}} = \frac{v_d}{A_dv_d + [...]_{eventualmente}}$
+{\bf Prodotto Banda-Guadagno} $\displaystyle B = \beta f_T$ \ \ {\bf Parametro Beta:} $\displaystyle \beta = -\frac{v_d}{\hat{e}} = -\frac{v_d}{A_dv_d + A_{cm}v_{cm} + ...}$
 
-{\bf Limitazioni:} $\displaystyle \frac{V_{out, min}}{A_d} < v_d(t) < \frac{V_{out, max}}{A_d}$ \ \ \&  $\displaystyle Slew-Rate^- < \frac{dv_{out}}{dt} < Slew-Rate^+$
+{\bf Casi Particolari:} Ad esempio operazionale ideale con parametri canonici 
+
+($A_{cm} \simeq 0,\ R_{in} \to \infty, ...$) allora $\displaystyle \beta = 1 + \frac{R_2}{R_1}$, per invertenti e non-invertenti.
+
+(Esempio: se invertente con $A_d = -9$, allora $\frac{R_2}{R_1} = 9$ da cui $\beta = 1 + \frac{R_2}{R_1} = 10$)
+
+{\bf Slew-Rate:} $\displaystyle \bigg |\frac{dv}{dt}\bigg |_{max} \leq \bigg |SR\bigg |.$ Ipotizziamo sinusoide in ingresso amplificata all'uscita.
+
+$\displaystyle \bigg |\frac{\partial}{\partial{t}} V_{in}A_vsin(\omega t)\bigg |_{max}\leq \bigg |SR\bigg |$. Quindi: $\displaystyle \bigg |\omega A_vV_{in}\bigg | = \bigg |2\pi fA_vV_{in}\bigg | \leq \bigg | SR \bigg |$
 
 {\bf Offset di Tensione:} $V_{OFF}$ collegata al morsetto +
 
