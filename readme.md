@@ -22,7 +22,7 @@
 
 **Incertezza Tipica**: ![Incertezza Tipica](https://latex.codecogs.com/svg.latex?\pm%20(\%%20lettura%20+%20\%%20fondo\_scala))
 
-**Strumento di classe x**: lo strumento ha una precisione pari ad x% del fondo_scala
+**Strumento di classe x**: lo strumento ha una precisione pari ad x% del fondo_{scala}
 
 <!-- L'incertezza va riportata con **al più** due cifre significative. (e.g.: ![Esempio](https://latex.codecogs.com/svg.latex?R%20=%20(4700%20\pm%2047)%20\Omega) -->
 
