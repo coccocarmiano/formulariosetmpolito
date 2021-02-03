@@ -26,7 +26,7 @@
 [Prodotto/Divisione]: https://latex.codecogs.com/svg.latex?y%20=%20a\cdot%20b^{\pm%201}%20\to%20\epsilon_y%20=%20\epsilon_a%20+%20\epsilon_b
 [Potenza Radice]: https://latex.codecogs.com/svg.latex?y%20=%20x^{\pm%20n}%20\to%20\epsilon_y%20=%20n^{\pm%201}\epsilon_x
 
-| ---                                                                 | Formula                                                      |
+| -                                                                   | Formula                                                      |
 |:------------------------------------------------------------------- |:------------------------------------------------------------ |
 | **Incertezza Tipica**                                               | ![Incertezza misura]                                         |
 | **Strumento di classe x**                                           | lo strumento ha una precisione pari ad x% del fondo scala    |
@@ -39,25 +39,22 @@
 
 ## Attrezzature
 
-<!-- **Full-Scale Range**: ![Full-Scale Range](https://latex.codecogs.com/svg.latex?FSR%20=%20V_{max}%20-%20V_{min}) -->
+[Full-Scale Range]: https://latex.codecogs.com/svg.latex?FSR%20=%20V_{max}%20-%20V_{min}
+[Quantizzazione su N bit]: https://latex.codecogs.com/svg.latex?N%20=%20log_2(M)
+[Uscita Ricostruita]: https://latex.codecogs.com/svg.latex?y%20=%20\sum_{i=0}^{n-1}%202^i\cdot%20B_i%20\%20\%20(B%20=%200%20\lor%20B%20=%201)
+[MSB]: https://latex.codecogs.com/svg.latex?B_{n-1}
+[LSB]: https://latex.codecogs.com/svg.latex?B_0
+[Teorema del Campionamento (B banda del segnale)]: https://latex.codecogs.com/svg.latex?f_c%20\ge%202\cdot%20B
+[Prodotto Banda Guadagno]: https://latex.codecogs.com/svg.latex?B\cdot%20t_{salita}%20=%200.35
+[Relazione Salita-Visualizzato]: https://latex.codecogs.com/svg.latex?t_{s,%20visualizzato}^2%20=%20t_{s,%20segnale}^2%20+%20t_{s,%20circuito}^2%20+%20t_{s,%20oscilloscopio}^2
+[t_so]: https://latex.codecogs.com/svg.latex?t_{s,o}
 
-<!-- **Quantizzazione su N bit**: ![Quantizzazione su N bit](https://latex.codecogs.com/svg.latex?N%20=%20log_2(M)) -->
-
-<!-- **Uscita Ricostruita**: ![Uscita Ricostruita](https://latex.codecogs.com/svg.latex?y%20=%20\sum_{i=0}^{n-1}%202^i\cdot%20B_i%20\%20\%20(B%20=%200%20\lor%20B%20=%201)) -->
-
-<!-- **MSB**: ![MSB](https://latex.codecogs.com/svg.latex?B_{n-1}) -->
-
-<!-- **LSB**: ![LSB](https://latex.codecogs.com/svg.latex?B_0) -->
-
-<!-- **Teorema del Campionamento** (B banda del segnale): ![Teorema del Campionamento](https://latex.codecogs.com/svg.latex?f_c%20\ge%202\cdot%20B) -->
-
-**Errore di Lettura** (Parallasse): valore di una "tacchetta"
-
-**Prodotto Banda Guadagno**: ![Prodotto Banda Guadagno](https://latex.codecogs.com/svg.latex?B\cdot%20t_{salita}%20=%200.35) (varia col modello dell'oscilloscopio)
-
-**Relazione Salita-Visualizzato**: ![Relazione Salita-Visualizzato](https://latex.codecogs.com/svg.latex?t_{s,%20visualizzato}^2%20=%20t_{s,%20segnale}^2%20+%20t_{s,%20circuito}^2%20+%20t_{s,%20oscilloscopio}^2)
-
-Solitamente il ![Tso](https://latex.codecogs.com/svg.latex?t_{s,o}) è trascurabile.
+| -                                                                   | Formula                                                      |
+|:------------------------------------------------------------------- |:------------------------------------------------------------ |
+| **Errore di Lettura** (Parallasse)                                  | Valore di una "tacchetta"                                    |
+| **Prodotto Banda Guadagno** (varia col modello dell'oscilloscopio)  | ![Prodotto Banda Guadagno]                                   |
+| **Relazione Salita-Visualizzato**                                   | ![Relazione Salita-Visualizzato]                             |
+| *Solitamente il ![t_so] è trascurabile.*                                                                                           |
 
 [v_m]: https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{1}{T}%20\int_{t_0}^{t_0+T}%20v(t)dt
 [v_rms]: https://latex.codecogs.com/svg.latex?v_{rms}=%20\sqrt{\frac{1}{T}%20\int_{t_0}^{t_0+T}%20v^2(t)dt}
