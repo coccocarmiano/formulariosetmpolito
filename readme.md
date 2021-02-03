@@ -298,7 +298,7 @@ Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_%7Bout%7D%20%3D%200):
 
 **Casi Particolari**: Ad esempio operazionale ideale con parametri canonici (![Parametri]) allora ![Beta], per invertenti e non-invertenti.
 
-Esempio: ![Esempio Op Amp](https://latex.codecogs.com/svg.latex?%5Ctext%20%7BAmp.%20Op.%20con%20%7D%20A_d%20%3D%20-9%2C%20%5Ctext%20%7Ballora%20%7D%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%209%20%5Ctext%20%7B%20da%20cui%20%7D%20%5Cbeta%20%3D%201%20&plus;%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%2010)
+Esempio: ![Esempio Op Amp](https://latex.codecogs.com/svg.latex?A_d%20%3D%20-9%20%5Cimplies%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%209%20%5Cimplies%20%5Cbeta%20%3D%201%20&plus;%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%2010)
 
 **Slew-Rate** (**SR**):
 
