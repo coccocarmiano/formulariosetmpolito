@@ -208,9 +208,9 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 | ![Tensione Ideale]  | ![Corrente Ideale]  | ![Transconduttanza]                   | ![Transresistenza]                   |
 |                     |                     | ideale se: ![Transconduttanza ideale] | ideale se: ![Transresistenza ideale] |
 
-[Efficienza Amplificatore Potenza]: https://latex.codecogs.com/svg.latex?%5Ceta%20%3D%20%5Cfrac%7BP_%7Bout%7D%7D%7BP_%7Bal%7D+P_%7Bin%7D%7D%20%5Csimeq%20%5Cfrac%7BP_%7Bout%7D%7D%7BP_%7Bal%7D%7D
+**Efficienza Amplificatore Potenza**:
 
-**Efficienza Amplificatore Potenza**: ![Efficienza Amplificatore Potenza]
+![Efficienza Amplificatore Potenza](https://latex.codecogs.com/svg.latex?%5Ceta%20%3D%20%5Cfrac%7BP_%7Bout%7D%7D%7BP_%7Bal%7D+P_%7Bin%7D%7D%20%5Csimeq%20%5Cfrac%7BP_%7Bout%7D%7D%7BP_%7Bal%7D%7D)
 
 [CS]: https://latex.codecogs.com/svg.latex?A_v%20%3C%200,%20%5C%20R_%7Bin%7D%20%5Cto%20%5Cinfty,%20%5C%20R_%7Bout%7D%20%5Cin%20%5Cmathbb%7BR%7D
 [CD]: https://latex.codecogs.com/svg.latex?A_v%20%3C%201,%20%5C%20R_%7Bin%7D%20%5Cto%20%5Cinfty,%20%5C%20R_%7Bout%7D%20%5Csimeq%20%5Cfrac%7B1%7D%7Bg_m%7D
@@ -231,7 +231,9 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 
 **Effetti di Carico**: Uno stadio si comporta come un amplificatore con generatore pilotato. Trovate ![R_in] e ![R_out], rappresenta il blocco centrale di un circuito di mezzo tra un generatore in ingresso ![v_in] con resistenza ![R_S] e un'uscita ![v_out] con resistenza ![R_L]. Si può ricavare l'uscita ![v_out] in funzione dell'ingresso ![v_in] (e quindi la funzione di trasferimento ![A](https://latex.codecogs.com/svg.latex?A_%7Bv,s%7D)) eseguendo semplici partitori.
 
-Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://latex.codecogs.com/svg.latex?v_%7Bout%7D%20%3D%20v_%7Bin%7D%5Cfrac%7BR_%7Bin%7D%7D%7BR_%7Bin%7D+R_S%7DA_v%5Cfrac%7BR_L%7D%7BR_L+R_%7Bout%7D%7D)
+Esempio: se lo stadio è un partitore di tensione, allora:
+
+![Esempio](https://latex.codecogs.com/svg.latex?v_%7Bout%7D%20%3D%20v_%7Bin%7D%5Cfrac%7BR_%7Bin%7D%7D%7BR_%7Bin%7D+R_S%7DA_v%5Cfrac%7BR_L%7D%7BR_L+R_%7Bout%7D%7D)
 
 ## Amplificatori Operazionali
 
@@ -264,14 +266,15 @@ Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_%7Bout%7D%20%3D%200):
 * **Integratore**: Condensatore su ![R_2]
 * **Derivatore**: Condensatore su ![R_1]
 
-[Sommatore Generalizzato]: https://latex.codecogs.com/svg.latex?v_%7Bout%7D%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3D0%7D%5EM%20G_%7Bi%5E-%7D%20+%20G_f%7D%7B%5Csum_%7Bi%3D0%7D%5EN%20G_%7Bi%5E+%7D%7D%20%5Csum_%7Bi%3D1%7D%5EN%20%5Cfrac%7BG_%7Bi%5E+%7D%7D%7BG_f%7Dv_%7Bi%5E+%7D-%5Csum_%7Bi%3D1%7D%5EM%5Cfrac%7BG_%7Bi%5E-%7D%7D%7BG_f%7Dv_%7Bi%5E-%7D
-[CMRR]: https://latex.codecogs.com/svg.latex?%5Cbigg%20|%5Cfrac%7BA_d%7D%7BA_%7Bcm%7D%7D%20%5Cbigg%20|,%20%5C%20v_%7Bcm%7D%20%3D%20%5Cfrac%7Bv%5E++v%5E-%7D%7B2%7D,%20%5C%20v_d%20%3D%20v%5E+-v%5E-
+**Sommatore Generalizzato**:
 
-**Sommatore Generalizzato**: ![Sommatore Generalizzato]
+![Sommatore Generalizzato](https://latex.codecogs.com/svg.latex?v_%7Bout%7D%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3D0%7D%5EM%20G_%7Bi%5E-%7D%20+%20G_f%7D%7B%5Csum_%7Bi%3D0%7D%5EN%20G_%7Bi%5E+%7D%7D%20%5Csum_%7Bi%3D1%7D%5EN%20%5Cfrac%7BG_%7Bi%5E+%7D%7D%7BG_f%7Dv_%7Bi%5E+%7D-%5Csum_%7Bi%3D1%7D%5EM%5Cfrac%7BG_%7Bi%5E-%7D%7D%7BG_f%7Dv_%7Bi%5E-%7D)
 
 *(Non usare questa formula, meglio **sovrapposizione** e/o **Millman**)*
 
-**Common-Mode Rejection Ratio** (**CMRR**): ![CMRR]
+**Common-Mode Rejection Ratio** (**CMRR**):
+
+![CMRR](https://latex.codecogs.com/svg.latex?%5Cbigg%20|%5Cfrac%7BA_d%7D%7BA_%7Bcm%7D%7D%20%5Cbigg%20|,%20%5C%20v_%7Bcm%7D%20%3D%20%5Cfrac%7Bv%5E++v%5E-%7D%7B2%7D,%20%5C%20v_d%20%3D%20v%5E+-v%5E-)
 
 ## Limiti Amplificatori Operazionali
 
@@ -292,22 +295,30 @@ Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_%7Bout%7D%20%3D%200):
 [A_d]: https://latex.codecogs.com/svg.latex?A_d%20%3D%20-9
 [Rapporto]: https://latex.codecogs.com/svg.latex?%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%209
 [Risultato]: https://latex.codecogs.com/svg.latex?%5Cbeta%20%3D%201%20+%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%2010
-[Slew-Rate]: https://latex.codecogs.com/svg.latex?%5Cbigg%20|%5Cfrac%7Bdv%7D%7Bdt%7D%5Cbigg%20|_%7Bmax%7D%20%5Cleq%20%5Cbigg%20|SR%5Cbigg%20|
+[Slew-Rate]: 
 [V_OFF]: https://latex.codecogs.com/svg.latex?V_%7BOFF%7D
-[Corrente]: https://latex.codecogs.com/svg.latex?I%5E+/I%5E-%20%3D%20I_%7BBIAS%7D+%5Cfrac%7BI_%7BOFF%7D%7D%7B2%7D
+[Corrente morsetti]: https://latex.codecogs.com/svg.latex?I%5E+/I%5E-%20%3D%20I_%7BBIAS%7D+%5Cfrac%7BI_%7BOFF%7D%7D%7B2%7D
 [Corrente uscente]: https://latex.codecogs.com/svg.latex?I_%7BBIAS%7D%20%3D%20%5Cfrac%7BI%5E++I%5E-%7D%7B2%7D,%20%5C%20I_%7BOFF%7D%20%3D%20I%5E++I%5E-
 
 **Casi Particolari**: Ad esempio operazionale ideale con parametri canonici (![Parametri]) allora ![Beta], per invertenti e non-invertenti.
 
 (Esempio: se invertente con ![A_d], allora ![Rapporto] da cui ![Risultato])
 
-**Slew-Rate** (**SR**): ![Slew-Rate]. Ipotizziamo sinusoide in ingresso amplificata all'uscita.
+**Slew-Rate** (**SR**):
+
+![Slew-Rate](https://latex.codecogs.com/svg.latex?%5Cbigg%20|%5Cfrac%7Bdv%7D%7Bdt%7D%5Cbigg%20|_%7Bmax%7D%20%5Cleq%20%5Cbigg%20|SR%5Cbigg%20|)
+
+Ipotizziamo sinusoide in ingresso amplificata all'uscita.
 
 ![dv/dt](https://latex.codecogs.com/svg.latex?%5Cbigg%20|%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%7Bt%7D%7D%20V_%7Bin%7DA_vsin(%5Comega%20t)%5Cbigg%20|_%7Bmax%7D%5Cleq%20%5Cbigg%20|SR%5Cbigg%20|%20%5Cimplies%20%5Cdisplaystyle%20%5Cbigg%20|%5Comega%20A_vV_%7Bin%7D%5Cbigg%20|%20%3D%20%5Cbigg%20|2%5Cpi%20fA_vV_%7Bin%7D%5Cbigg%20|%20%5Cleq%20%5Cbigg%20|%20SR%20%5Cbigg%20|)
 
 **Offset di Tensione**: ![V_OFF] collegata al morsetto *+*
 
-**Correnti di Polarizzazione**: Corrente ![Corrente] ai due morsetti, uscente ![Corrente uscente]
+**Correnti di Polarizzazione**:
+
+| Corrente ai due morsetti | Corrente uscente    |
+|:------------------------ |:------------------- |
+| ![Corrente morsetti]     | ![Corrente uscente] |
 
 ## Comparatori
 
