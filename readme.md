@@ -147,7 +147,9 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 * Il **S**ource è sempre dov'è la corrente.
 * Il **G**ate sempre la sbarra.
-* Il **D**rain il rimanente. Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS] o ![v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS] o ![v_SG]), ricordando che ![v_XY] è una tensione con la punta in *X* e la coda in *Y*.
+* Il **D**rain il rimanente.
+
+Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS] o ![v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS] o ![v_SG]), ricordando che ![v_XY] è una tensione con la punta in *X* e la coda in *Y*.
 
 **Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
 
@@ -172,11 +174,13 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Efficienza Amplificatore Potenza**: ![Efficienza Amplificatore Potenza](https://latex.codecogs.com/svg.latex?\eta%20=%20\frac{P_{out}}{P_{al}+P_{in}}%20\simeq%20\frac{P_{out}}{P_{al}})
 
-* **Common Source**: ![Common Source](https://latex.codecogs.com/svg.latex?A_v%20%3C%200,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\in%20\mathbb{R})
+[CS]: https://latex.codecogs.com/svg.latex?A_v%20%3C%200,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\in%20\mathbb{R}
+[CD]: https://latex.codecogs.com/svg.latex?A_v%20%3C%201,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\simeq%20\frac{1}{g_m}
+[CG]: https://latex.codecogs.com/svg.latex?A_v%20\simeq%20g_m(R%20||%20r_o),%20\%20R_{in}%20\simeq%20\frac{1}{g_m},%20\%20R_{out}%20=%20R%20||%20r_o
 
-* **Common Drain**: ![Common Drain](https://latex.codecogs.com/svg.latex?A_v%20%3C%201,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\simeq%20\frac{1}{g_m})
-
-* **Common Gate**: ![Common Gate](https://latex.codecogs.com/svg.latex?A_v%20\simeq%20g_m(R%20||%20r_o),%20\%20R_{in}%20\simeq%20\frac{1}{g_m},%20\%20R_{out}%20=%20R%20||%20r_o)
+| **Common Source** | **Common Drain** | **Common Gate** |
+| ----------------- | ---------------- | --------------- |
+| ![CS]             | ![CD]            | ![CG]           |
 
 [R_in]: https://latex.codecogs.com/svg.latex?R_{in}
 [R_out]: https://latex.codecogs.com/svg.latex?R_{out}
