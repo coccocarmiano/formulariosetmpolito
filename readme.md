@@ -292,16 +292,13 @@ Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_%7Bout%7D%20%3D%200):
 
 [Parametri]: https://latex.codecogs.com/svg.latex?A_%7Bcm%7D%20%5Csimeq%200,%5C%20R_%7Bin%7D%20%5Cto%20%5Cinfty,%20...
 [Beta]: https://latex.codecogs.com/svg.latex?%5Cbeta%20%3D%201%20+%20%5Cfrac%7BR_2%7D%7BR_1%7D
-[A_d]: https://latex.codecogs.com/svg.latex?A_d%20%3D%20-9
-[Rapporto]: https://latex.codecogs.com/svg.latex?%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%209
-[Risultato]: https://latex.codecogs.com/svg.latex?%5Cbeta%20%3D%201%20+%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%2010
 [V_OFF]: https://latex.codecogs.com/svg.latex?V_%7BOFF%7D
 [Corrente morsetti]: https://latex.codecogs.com/svg.latex?I%5E+/I%5E-%20%3D%20I_%7BBIAS%7D+%5Cfrac%7BI_%7BOFF%7D%7D%7B2%7D
 [Corrente uscente]: https://latex.codecogs.com/svg.latex?I_%7BBIAS%7D%20%3D%20%5Cfrac%7BI%5E++I%5E-%7D%7B2%7D,%20%5C%20I_%7BOFF%7D%20%3D%20I%5E++I%5E-
 
 **Casi Particolari**: Ad esempio operazionale ideale con parametri canonici (![Parametri]) allora ![Beta], per invertenti e non-invertenti.
 
-(Esempio: se invertente con ![A_d], allora ![Rapporto] da cui ![Risultato])
+Esempio: ![Esempio Op Amp](https://latex.codecogs.com/svg.latex?%5Ctext%20%7BAmp.%20Op.%20con%20%7D%20A_d%20%3D%20-9%2C%20%5Ctext%20%7Ballora%20%7D%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%209%20%5Ctext%20%7B%20da%20cui%20%7D%20%5Cbeta%20%3D%201%20&plus;%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%2010)
 
 **Slew-Rate** (**SR**):
 
