@@ -19,7 +19,7 @@
 [Media]: https://latex.codecogs.com/svg.latex?\mu%20=%20\frac{1}{N}\sum_i%20x_i
 [Varianza]: https://latex.codecogs.com/svg.latex?\sigma^2%20=%20\frac{1}{N-1}\sum%20(x_i%20-%20\mu)^2
 [Incertezza misura]: https://latex.codecogs.com/svg.latex?\pm%20(\%%20lettura%20+%20\%%20fondo\_scala)
-Esempio incertezza]: https://latex.codecogs.com/svg.latex?R%20=%20(4700%20\pm%2047)%20\Omega
+[Esempio incertezza]: https://latex.codecogs.com/svg.latex?R%20=%20(4700%20\pm%2047)%20\Omega
 [Errore assoluto]: https://latex.codecogs.com/svg.latex?y%20=%20f(x_1,%20x_2,%20...)%20\to%20\delta%20y%20%20=%20\sum_i%20\Bigg%20|\frac{\partial%20f(\vec{x})}{\partial%20x_i}\Bigg%20|_{x=x_{mis}}%20\delta%20x_i
 [Errore relativo]: https://latex.codecogs.com/svg.latex?y$%20misura%20$\to%20\epsilon_r%20=%20\frac{\delta%20y}{y}%20\%20\%20(\epsilon_{r,%20\%}%20=%20100\cdot\epsilon_r)
 [Somma/Differenza]: https://latex.codecogs.com/svg.latex?y%20=%20a%20\pm%20b%20\to%20\delta%20y%20=%20\delta%20a%20+%20\delta%20b
