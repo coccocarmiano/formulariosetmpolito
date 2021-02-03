@@ -75,7 +75,7 @@
 [Valore T_1]: https://latex.codecogs.com/svg.latex?T%20%5Cto%20T_1%20%3D%20T
 [Riscaldamento di un Resistore]: https://latex.codecogs.com/svg.latex?T_%7Bfin%7D%20-%20T_%7Bamb%7D%20%3D%20R_%7Btermica%7D%5Ccdot%20P_%7Bdissipata%7D
 [Potenza]: https://latex.codecogs.com/svg.latex?P%20%3D%20%5Cfrac%7Bv_%7Beff%7D%5E2%7D%7BR%7D
-[v_eff]: (https://latex.codecogs.com/svg.latex?v_%7Beff%7D%20%3D%20%5Cfrac%7BA%7D%7B%5Csqrt%7B2%7D%7D
+[v_eff]: https://latex.codecogs.com/svg.latex?v_%7Beff%7D%20%3D%20%5Cfrac%7BA%7D%7B%5Csqrt%7B2%7D%7D
 [Valor-Medio Segnale Raddrizzato (Singola/Doppia Semionda)]: https://latex.codecogs.com/svg.latex?v_m%20%3D%20%5Cfrac%7B2%5Ccdot%20V_p%7D%7B%5Cpi%7D%20%5Cneq%20v_%7Brms%7D
 [Valore Efficace Segnale Raddrizzato]: https://latex.codecogs.com/svg.latex?v_%7Beff%7D%20%3D%20%5Cfrac%7BV_p%7D%7B%5Csqrt%7B2%7D%7D%20%3D%20k_s%5Ccdot%5Cfrac%7B2%5Ccdot%20V_p%7D%7B%5Cpi%7D
 [k_s]: https://latex.codecogs.com/svg.latex?k_s%20%3D%20%5Cleft%5C%7B%20%20%20%20%5Cbegin%7Barray%7D%7Bll%7D%20%20%20%20%20%20%20%201.11%20&%20%5Ctext%7Bsemionda%20doppia%7D%20%5C%5C%20%20%20%20%20%20%20%202.22%20&%20%5Ctext%7Bsemionda%20singola%7D%20%20%20%20%5Cend%7Barray%7D%5Cright.
