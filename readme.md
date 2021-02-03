@@ -117,31 +117,51 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 ## Segnali
 
-**Signal-to-Noise Ratio**: ![SNR](https://latex.codecogs.com/svg.latex?SNR%20=%20\frac{P_{segnale}}{P_{rumore}}%20=%20\frac{v^2}{n^2})
+[SNR]: https://latex.codecogs.com/svg.latex?SNR%20=%20\frac{P_{segnale}}{P_{rumore}}%20=%20\frac{v^2}{n^2}
+[SNR_dB]: https://latex.codecogs.com/svg.latex?SNR_{dB}%20=%2010log_{10}(SNR)%20=%2020log_{10}%20\left(\frac{v}{n}\right)
+[Eq]: https://latex.codecogs.com/svg.latex?\epsilon_q%20=%20\frac{S}{2^{N+1}}%20=%20\frac{1}{2}LSB
 
-**SNR in dB**: ![SNR_dB](https://latex.codecogs.com/svg.latex?SNR_{dB}%20=%2010log_{10}(SNR)%20=%2020log_{10}%20\left(\frac{v}{n}\right))
-
-**Errore di Quantizzazione**: ![Errore di Quantizzazione](https://latex.codecogs.com/svg.latex?\epsilon_q%20=%20\frac{S}{2^{N+1}}%20=%20\frac{1}{2}LSB), con *S* dinamica del segnale
+| -                                                                   | Formula                                                      |
+|:------------------------------------------------------------------- |:------------------------------------------------------------ |
+| **Signal-to-Noise Ratio**                                           | ![SNR]                                                       |
+| **SNR in dB**                                                       | ![SNR_dB]                                                    |
+| **Errore di Quantizzazione**                                        | ![Eq], con *S* dinamica del segnale                          |
 
 ## Diodi
 
-**Polarizzazione Diretta**: ![Polarizzazione Diretta](https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20\to%20\infty), curva verticale per ![Polarizzazione Diretta (condizioni)](https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_\gamma%20\simeq%200.6-0.7%20\%20V)
+[v_D]: https://latex.codecogs.com/svg.latex?v_D
+[i_D]: https://latex.codecogs.com/svg.latex?i_D
+[Polarizzazione Diretta]: https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20\to%20\infty
+[Curva verticale]: https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_\gamma%20\simeq%200.6-0.7%20\%20V
+[Polarizzazione Inversa]: https://latex.codecogs.com/svg.latex?v_D%20%3C%200
 
-**Polarizzazione Inversa**: ![Polarizzazione Inversa](https://latex.codecogs.com/svg.latex?v_D%20%3C%200,%20i_D) satura a valori piccoli e negativi (*pA-fA*)
+**Polarizzazione Diretta**: ![Polarizzazione Diretta], curva verticale per ![Curva verticale]
 
-**Diodo Reale**: ![Diodo Reale](https://latex.codecogs.com/svg.latex?i_D%20=%20I_s(e^{\frac{v_D}{\eta%20V_T}}-%201))
+**Polarizzazione Inversa**: ![Polarizzazione Inversa], ![i_D] satura a valori piccoli e negativi (*pA-fA*)
 
-**Diodo Ideale**: ![Diodo Ideale](https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%200,%20ON%20\%20\big%20|%20\%20v_D%20%3C%200%20\to%20i_D%20=%200,%20OFF) (nel circuito: generatore)
+[Diodo Reale]: https://latex.codecogs.com/svg.latex?i_D%20=%20I_s(e^{\frac{v_D}{\eta%20V_T}}-%201)
+[Diodo Ideale]: https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%200,%20ON%20\%20\big%20|%20\%20v_D%20%3C%200%20\to%20i_D%20=%200,%20OFF
+[Diodo Semi-Ideale]: https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%20V_\gamma,%20ON%20\%20\big%20|%20\%20v_D%20%3C%20V_\gamma%20\to%20i_D%20=%200,%20OFF
+[Resistenza di un Diodo]: https://latex.codecogs.com/svg.latex?g_D%20=%20\frac{1}{r_D}%20=%20\frac{I_D}{\eta%20V_T}
 
-**Diodo Semi-Ideale**: ![Diodo Semi-Ideale](https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%20V_\gamma,%20ON%20\%20\big%20|%20\%20v_D%20%3C%20V_\gamma%20\to%20i_D%20=%200,%20OFF) (nel circuito: corto)
+| Diodo                  | Valori                                      |
+| ---------------------- | ------------------------------------------- |
+| **Diodo Reale**        | ![Diodo Reale]                              |
+| **Diodo Ideale**       | ![Diodo Ideale] (nel circuito: generatore)  |
+| **Diodo Semi-Ideale**  | ![Diodo Semi-Ideale] (nel circuito: corto)  |
 
-**Resistenza di un Diodo (Piccolo Segnale)**: ![Resistenza di un Diodo](https://latex.codecogs.com/svg.latex?g_D%20=%20\frac{1}{r_D}%20=%20\frac{I_D}{\eta%20V_T})
+**Resistenza di un Diodo (Piccolo Segnale)**: ![Resistenza di un Diodo]
 
 ## Transistors
 
 **Corrente di Gate**: ![Corrente di Gate](https://latex.codecogs.com/svg.latex?i_G%20=%200) in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
 
-| **nMOS**: ![nMOS](https://latex.codecogs.com/svg.latex?v_{GS},%20\%20v_{DS}) | **pMOS**: ![pMOS](https://latex.codecogs.com/svg.latex?v_{SG},%20\%20v_{SD}) |
+[nMOS]: https://latex.codecogs.com/svg.latex?v_{GS},%20\%20v_{DS}
+[pMOS]: https://latex.codecogs.com/svg.latex?v_{SG},%20\%20v_{SD}
+
+| nMOS    | pMOS    |
+| ----    | ----    |
+| ![nMOS] | ![pMOS] |
 
 ***Trucco Mnemonico***:
 
@@ -157,7 +177,9 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS] o ![v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS] o ![v_SG]), ricordando che ![v_XY] è una tensione con la punta in *X* e la coda in *Y*.
 
-**Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
+[Condizioni Saturazione]: https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH}
+
+**Condizioni Saturazione**: ![Condizioni Saturazione]
 
 [OFF]: https://latex.codecogs.com/svg.latex?i_D%20=%200
 [ON]: https://latex.codecogs.com/svg.latex?i_D%20=%20\beta%20v_{DS}\left(v_{GS}-V_{TH}-\frac{v_{DS}}{2}\right)
@@ -169,7 +191,9 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 |:-------:|:------:|:---------------:|
 | ![OFF]  | ![ON]  | ![SAT]          |
 
-**Resistenze**: ![Resistenze](https://latex.codecogs.com/svg.latex?g_m%20=%20\sqrt{2I_D\beta}%20=%20\beta(v_{GS}-v_{TH})\%20\%20\%20g_o%20=%20\lambda%20I_D)
+[Resistenze]: https://latex.codecogs.com/svg.latex?g_m%20=%20\sqrt{2I_D\beta}%20=%20\beta(v_{GS}-v_{TH})\%20\%20\%20g_o%20=%20\lambda%20I_D
+
+**Resistenze**: ![Resistenze]
 
 ## Stadi Amplificatori
 
