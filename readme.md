@@ -177,7 +177,7 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 | **Tensione Ideale** | **Corrente Ideale** | **Transconduttanza** | **Transresistenza** |
 | ------------------- | ------------------- | -------------------- | ------------------- |
 | ![Tensione Ideale]  | ![Corrente Ideale]  | ![Transconduttanza]  | ![Transresistenza]  |
-|   |   | ![Transconduttanza ideale] | ![Transresistenza ideale] |
+|   |   | ideale se: ![Transconduttanza ideale] | ideale se: ![Transresistenza ideale] |
 
 **Efficienza Amplificatore Potenza**: ![Efficienza Amplificatore Potenza](https://latex.codecogs.com/svg.latex?\eta%20=%20\frac{P_{out}}{P_{al}+P_{in}}%20\simeq%20\frac{P_{out}}{P_{al}})
 
