@@ -58,8 +58,12 @@
 
 Solitamente il ![Tso](https://latex.codecogs.com/svg.latex?t_{s,o}) è trascurabile.
 
-**Valor-Medio**: ![Valor-Medio](https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{1}{T}%20\int_{t_0}^{t_0+T}%20v(t)dt)
-**Valore Efficace**: ![Valore Efficace](https://latex.codecogs.com/svg.latex?v_{rms}=%20\sqrt{\frac{1}{T}%20\int_{t_0}^{t_0+T}%20v^2(t)dt})
+[v_m]: https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{1}{T}%20\int_{t_0}^{t_0+T}%20v(t)dt
+[v_rms]: https://latex.codecogs.com/svg.latex?v_{rms}=%20\sqrt{\frac{1}{T}%20\int_{t_0}^{t_0+T}%20v^2(t)dt}
+
+| **Valor-Medio** | **Valore Efficace** |
+| --------------- | ------------------- |
+| ![v_m]          | ![v_rms]            |
 
 **Duty-Cycle**: ![Duty-Cycle](https://latex.codecogs.com/svg.latex?D%20=%20\frac{t_{alto}}{T})
 
