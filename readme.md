@@ -213,7 +213,7 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 
 [CS]: https://latex.codecogs.com/svg.latex?A_v%20%3C%200,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\in%20\mathbb{R}
 [CD]: https://latex.codecogs.com/svg.latex?A_v%20%3C%201,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\simeq%20\frac{1}{g_m}
-[CG]: https://latex.codecogs.com/svg.latex?A_v%20\simeq%20g_m(R%20||%20r_o),%20\%20R_{in}%20\simeq%20\frac{1}{g_m},%20\%20R_{out}%20=%20R%20||%20r_o
+[CG]: https://latex.codecogs.com/svg.latex?A_v%20\simeq%20g_m%20(R%20\parallel%20r_o),%20R_{in}%20\simeq%20\frac{1}{g_m},%20R_{out}%20=%20R%20\parallel%20r_o
 
 | **Common Source** | **Common Drain** | **Common Gate** |
 | ----------------- | ---------------- | --------------- |
