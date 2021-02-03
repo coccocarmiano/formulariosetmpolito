@@ -160,7 +160,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Corrente di Gate**: ![Corrente di Gate] in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
 
-[v_GS]: https://latex.codecogs.com/svg.latex?v_%7BGS%7D
+[v_GS]: https://latex.codecogs.com/svg.latex?v_%7BGS%7D%20%5C%3B
 [v_SG]: https://latex.codecogs.com/svg.latex?v_%7BSG%7D
 [v_DS]: https://latex.codecogs.com/svg.latex?v_%7BDS%7D
 [v_SD]: https://latex.codecogs.com/svg.latex?v_%7BSD%7D
@@ -190,7 +190,7 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 |:-------:|:------:|:---------------:|
 | ![OFF]  | ![ON]  | ![SAT]          |
 
-[Resistenze]: https://latex.codecogs.com/svg.latex?%5Cbegin%7Barray%7D%7Bll%7D%20g_m%20%3D%20%5Csqrt%7B2I_D%20%5Cbeta%7D%20%3D%20%5Cbeta%28v_%7BGS%7D-v_%7BTH%7D%29%20%5C%5C%20g_o%20%3D%20%5Clambda%20I_D%20%5Cend%7Barray%7D
+[Resistenze]: https://latex.codecogs.com/svg.latex?%5Cbegin%7Bmatrix%7D%20g_m%20%3D%20%5Csqrt%7B2I_D%20%5Cbeta%7D%20%3D%20%5Cbeta%28v_%7BGS%7D-v_%7BTH%7D%29%20%26%20%5C%3B%20%26%20g_o%20%3D%20%5Clambda%20I_D%20%5Cend%7Bmatrix%7D
 
 **Resistenze**: ![Resistenze]
 
