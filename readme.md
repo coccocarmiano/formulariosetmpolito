@@ -26,16 +26,16 @@
 [Prodotto/Divisione]: https://latex.codecogs.com/svg.latex?y%20=%20a\cdot%20b^{\pm%201}%20\to%20\epsilon_y%20=%20\epsilon_a%20+%20\epsilon_b
 [Potenza Radice]: https://latex.codecogs.com/svg.latex?y%20=%20x^{\pm%20n}%20\to%20\epsilon_y%20=%20n^{\pm%201}\epsilon_x
 
-| ---                                       | Formula                                                      |
-|:----------------------------------------- |:------------------------------------------------------------ |
-| **Incertezza Tipica**                     | ![Incertezza misura]                                         |
-| **Strumento di classe x**                 | lo strumento ha una precisione pari ad x% del fondo scala    |
-| *L'incertezza va riportata con **al più** due cifre significative.* (e.g.: ![Esempio incertezza]         |
-| **Errore Qualunque (Derivate Parziali)**  | ![Errore assoluto]                                           |
-| **Errore Relativo**                       | ![Errore Relativo]                                           |
-| **Somma/Differenza**                      | ![Somma/Differenza]                                          |
-| **Prodotto/Divisione**                    | ![Prodotto/Divisione]                                        |
-| **Potenza/Radice**                        | ![Potenza Radice]                                            |
+| ---                                                                 | Formula                                                      |
+|:------------------------------------------------------------------- |:------------------------------------------------------------ |
+| **Incertezza Tipica**                                               | ![Incertezza misura]                                         |
+| **Strumento di classe x**                                           | lo strumento ha una precisione pari ad x% del fondo scala    |
+| *L'incertezza va riportata con **al più** due cifre significative.* | (e.g.: ![Esempio incertezza]                                 |
+| **Errore Qualunque (Derivate Parziali)**                            | ![Errore assoluto]                                           |
+| **Errore Relativo**                                                 | ![Errore Relativo]                                           |
+| **Somma/Differenza**                                                | ![Somma/Differenza]                                          |
+| **Prodotto/Divisione**                                              | ![Prodotto/Divisione]                                        |
+| **Potenza/Radice**                                                  | ![Potenza Radice]                                            |
 
 ## Attrezzature
 
