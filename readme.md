@@ -72,7 +72,8 @@
 [Risoluzione Relativa]: https://latex.codecogs.com/svg.latex?\frac{\delta%20f_x}{f_x}%20=%20\frac{1}{n}
 [T_1]: https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T
 [Riscaldamento di un Resistore]: https://latex.codecogs.com/svg.latex?T_{fin}%20-%20T_{amb}%20=%20R_{termica}\cdot%20P_{dissipata}
-[Potenza]: https://latex.codecogs.com/svg.latex?P%20=%20\frac{v_{eff}^2}{R}), per segnali sinusoidali ![v_eff](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{A}{\sqrt{2}}
+[Potenza]: https://latex.codecogs.com/svg.latex?P%20=%20\frac{v_{eff}^2}{R}
+[v_eff]: (https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{A}{\sqrt{2}}
 [Valor-Medio Segnale Raddrizzato (Singola/Doppia Semionda)]: https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{2\cdot%20V_p}{\pi}%20\neq%20v_{rms}
 [Valore Efficace Segnale Raddrizzato]: https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}%20=%20k_s\cdot\frac{2\cdot%20V_p}{\pi}
 [k_s]: https://latex.codecogs.com/svg.latex?k_s%20=%20\left\{%20%20%20%20\begin{array}{ll}%20%20%20%20%20%20%20%201.11%20&%20\text{semionda%20doppia}%20\\%20%20%20%20%20%20%20%202.22%20&%20\text{semionda%20singola}%20%20%20%20\end{array}\right.
@@ -90,7 +91,7 @@
 | **Scelta di T_1**                                                   | *n(t)* ruomore di periodo. ![T_1] (spesso *50 Hz*)           |
 | **Riscaldamento di un Resistore**                                   | ![Riscaldamento di un Resistore]                             |
 | **Ponte di Wheatstone**                                             | All'equilibrio, la *ddp* ai due nodi centrali è nulla.       |
-| **Potenza**                                                         | ![Potenza]                                                   |
+| **Potenza**                                                         | ![Potenza], per segnali sinusoidali ![v_eff]                 |
 | **Costante Strumentale**                                            | ![k_s]                                                       |
 
 Gli strumenti spesso riportano il valore efficace di un segnale.
