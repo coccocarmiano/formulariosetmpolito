@@ -142,17 +142,19 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 * Il **S**ource è sempre dov'è la corrente.
 * Il **G**ate sempre la sbarra.
-* Il **D**rain il rimanente. Per capire se usare ![v_GS][v_GS] o ![v_SG][v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS][v_DS] o ![v_SD][v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS][v_GS] o ![v_SG][v_SG]), ricordando che ![v_XY][v_XY] è una tensione con la punta in *X* e la coda in *Y*.
+* Il **D**rain il rimanente. Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS][v_DS] o ![v_SD][v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS][v_GS] o ![v_SG][v_SG]), ricordando che ![v_XY][v_XY] è una tensione con la punta in *X* e la coda in *Y*.
 
 **Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
 
-[6]: ![OFF](https://latex.codecogs.com/svg.latex?OFF%20\to%20i_D%20=%200)
-[7]: ![ON](https://latex.codecogs.com/svg.latex?ON%20\to%20i_D%20=%20\beta%20v_{DS}\left(v_{GS}-V_{TH}-\frac{v_{DS}}{2}\right))
-[8]: ![SAT](https://latex.codecogs.com/svg.latex?SAT.%20\to%20i_D%20=%20\frac{\beta}{2}(v_{GS}-V_{TH})^2(1+\lambda%20v_{DS}))
+[OFF]: https://latex.codecogs.com/svg.latex?OFF%20\to%20i_D%20=%200
+[ON]: https://latex.codecogs.com/svg.latex?ON%20\to%20i_D%20=%20\beta%20v_{DS}\left(v_{GS}-V_{TH}-\frac{v_{DS}}{2}\right)
+[SAT]: https://latex.codecogs.com/svg.latex?SAT.%20\to%20i_D%20=%20\frac{\beta}{2}(v_{GS}-V_{TH})^2(1+\lambda%20v_{DS})
 
 **Corrente di Drain** (xMOS):
 
-| [OFF][6] | [ON][7] | [SAT][8] |
+| **OFF** | **ON** | **Saturazione** |
+|:-------:|:------:|:---------------:|
+| ![OFF] | ![ON] | ![SAT] |
 
 **Resistenze**: ![Resistenze](https://latex.codecogs.com/svg.latex?g_m%20=%20\sqrt{2I_D\beta}%20=%20\beta(v_{GS}-v_{TH})\%20\%20\%20g_o%20=%20\lambda%20I_D)
 
