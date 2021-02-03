@@ -98,6 +98,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 **Valori Efficaci noti**: **solo** per ampiezze **simmetriche** (![V_eff noti](https://latex.codecogs.com/svg.latex?-V_p%20\to%20V_p,%20\%20-5V%20\to%205V,%20...)):
 
 | **Onda Quadra** | **Sinusoidi** | **Triangolari** |
+| --------------- | ------------- | --------------- |
 | ![Onda Quadra](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20V_p) | ![Sinusoidi](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}) | ![Triangolari](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{3}}) |
 
 **Circuito equivalente d'ingresso DSO**: è rappresentato dal parallelo tra un condensatore (decine di *pF*) e una resistenza (solitamente *1 MΩ*).
@@ -146,15 +147,15 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
 
-[OFF]: https://latex.codecogs.com/svg.latex?OFF%20\to%20i_D%20=%200
-[ON]: https://latex.codecogs.com/svg.latex?ON%20\to%20i_D%20=%20\beta%20v_{DS}\left(v_{GS}-V_{TH}-\frac{v_{DS}}{2}\right)
-[SAT]: https://latex.codecogs.com/svg.latex?SAT.%20\to%20i_D%20=%20\frac{\beta}{2}(v_{GS}-V_{TH})^2(1+\lambda%20v_{DS})
+[OFF]: https://latex.codecogs.com/svg.latex?i_D%20=%200
+[ON]: https://latex.codecogs.com/svg.latex?i_D%20=%20\beta%20v_{DS}\left(v_{GS}-V_{TH}-\frac{v_{DS}}{2}\right)
+[SAT]: https://latex.codecogs.com/svg.latex?i_D%20=%20\frac{\beta}{2}(v_{GS}-V_{TH})^2(1+\lambda%20v_{DS})
 
 **Corrente di Drain** (xMOS):
 
 | **OFF** | **ON** | **Saturazione** |
 |:-------:|:------:|:---------------:|
-| ![OFF] | ![ON] | ![SAT] |
+| ![OFF]  | ![ON]  | ![SAT]          |
 
 **Resistenze**: ![Resistenze](https://latex.codecogs.com/svg.latex?g_m%20=%20\sqrt{2I_D\beta}%20=%20\beta(v_{GS}-v_{TH})\%20\%20\%20g_o%20=%20\lambda%20I_D)
 
