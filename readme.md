@@ -167,10 +167,17 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 
 ## Stadi Amplificatori
 
-* **Tensione Ideale**: ![Tensione Ideale](https://latex.codecogs.com/svg.latex?R_{in}%20\to%20\infty,%20\%20R_{out}%20\to%200)
-* **Corrente Ideale**: ![Corrente Ideale](https://latex.codecogs.com/svg.latex?R_{in}%20\to%200,%20\%20R_{out}%20\to%20\infty)
-* **Transconduttanza**: cioè ![i_out](https://latex.codecogs.com/svg.latex?i_{out}%20=%20g_mv_{gs}), **ideale** se ![Transconduttanza](https://latex.codecogs.com/svg.latex?R_{in}%20\to%20\infty,%20\%20R_{out}%20\to%20\infty)
-* **Transresistenza**: cioè ![v_out](https://latex.codecogs.com/svg.latex?v_{out}%20=%20R_mi_s), **ideale** se ![Transresistenza](https://latex.codecogs.com/svg.latex?R_{in}%20\to%200,%20R_{out}%20\to%200)
+[Tensione ideale]: https://latex.codecogs.com/svg.latex?R_{in}%20\to%20\infty,%20\%20R_{out}%20\to%200
+[Corrente ideale]: https://latex.codecogs.com/svg.latex?R_{in}%20\to%200,%20\%20R_{out}%20\to%20\infty
+[Transconduttanza]: https://latex.codecogs.com/svg.latex?i_{out}%20=%20g_mv_{gs}
+[Transconduttanza ideale]: https://latex.codecogs.com/svg.latex?R_{in}%20\to%20\infty,%20\%20R_{out}%20\to%20\infty
+[Transresistenza]: https://latex.codecogs.com/svg.latex?v_{out}%20=%20R_mi_s
+[Transresistenza ideale]: https://latex.codecogs.com/svg.latex?R_{in}%20\to%200,%20R_{out}%20\to%200
+
+| **Tensione Ideale** | **Corrente Ideale** | **Transconduttanza** | **Transresistenza** |
+| ------------------- | ------------------- | -------------------- | ------------------- |
+| ![Tensione Ideale]  | ![Corrente Ideale]  | ![Transconduttanza]  | ![Transresistenza]  |
+|   |   | ![Transconduttanza ideale] | ![Transresistenza ideale] |
 
 **Efficienza Amplificatore Potenza**: ![Efficienza Amplificatore Potenza](https://latex.codecogs.com/svg.latex?\eta%20=%20\frac{P_{out}}{P_{al}+P_{in}}%20\simeq%20\frac{P_{out}}{P_{al}})
 
