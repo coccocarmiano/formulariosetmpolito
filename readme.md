@@ -163,7 +163,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 [v_SD]: https://latex.codecogs.com/svg.latex?v_{SD}
 [v_XY]: https://latex.codecogs.com/svg.latex?v_{XY}
 
-nMOS: ![v_GS], ![v_DS]; pMOS: ![v_SG], ![v_SD]
+**nMOS**: ![v_GS], ![v_DS]; **pMOS**: ![v_SG], ![v_SD]
 
 ***Trucco Mnemonico***:
 
@@ -187,7 +187,7 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 |:-------:|:------:|:---------------:|
 | ![OFF]  | ![ON]  | ![SAT]          |
 
-[Resistenze]: https://latex.codecogs.com/svg.latex?g_m%20=%20\sqrt{2I_D\beta}%20=%20\beta(v_{GS}-v_{TH})\%20\%20\%20g_o%20=%20\lambda%20I_D
+[Resistenze]: https://latex.codecogs.com/svg.latex?g_m%20=%20\sqrt{2I_D\beta}%20=%20\beta(v_{GS}-v_{TH})\\%20\\%20\\%20g_o%20=%20\lambda%20I_D
 
 **Resistenze**: ![Resistenze]
 
