@@ -75,7 +75,7 @@ Solitamente il ![Tso](https://latex.codecogs.com/svg.latex?t_{s,o}) è trascurab
 **Risoluzione**: ![Risoluzione](https://latex.codecogs.com/svg.latex?\delta%20f_x%20=%20\frac{1}{T_c})
 **Risoluzione Relativa**: ![Risoluzione Relativa](https://latex.codecogs.com/svg.latex?\frac{\delta%20f_x}{f_x}%20=%20\frac{1}{n})
 
-**Scelta di ![T_1](https://latex.codecogs.com/svg.latex?T_1)**: ![n(t)](https://latex.codecogs.com/svg.latex?n(t)) ruomore di periodo ![T](https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T) (spesso 50 Hz)
+**Scelta di ![T_1](https://latex.codecogs.com/svg.latex?T_1)**: ![n(t)](https://latex.codecogs.com/svg.latex?n(t)) ruomore di periodo ![T](https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T) (spesso *50 Hz*)
 
 **Riscaldamento di un Resistore**: ![Riscaldamento di un Resistore](https://latex.codecogs.com/svg.latex?T_{fin}%20-%20T_{amb}%20=%20R_{termica}\cdot%20P_{dissipata})
 
@@ -174,16 +174,16 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 * **Common Gate**: ![Common Gate](https://latex.codecogs.com/svg.latex?A_v%20\simeq%20g_m(R%20||%20r_o),%20\%20R_{in}%20\simeq%20\frac{1}{g_m},%20\%20R_{out}%20=%20R%20||%20r_o)
 
-[9]: ![R_in](https://latex.codecogs.com/svg.latex?R_{in})
-[10]: ![R_out](https://latex.codecogs.com/svg.latex?R_{out})
-[11]: ![R_source](https://latex.codecogs.com/svg.latex?R_S)
-[12]: ![R_load](https://latex.codecogs.com/svg.latex?R_L)
-[13]: ![v_in](https://latex.codecogs.com/svg.latex?v_{in})
-[14]: ![v_out](https://latex.codecogs.com/svg.latex?v_{out})
-[15]: ![i_in](https://latex.codecogs.com/svg.latex?i_{in})
-[16]: ![i_out](https://latex.codecogs.com/svg.latex?i_{out})
+[R_in]: https://latex.codecogs.com/svg.latex?R_{in}
+[R_out]: https://latex.codecogs.com/svg.latex?R_{out}
+[R_S]: https://latex.codecogs.com/svg.latex?R_S
+[R_L]: https://latex.codecogs.com/svg.latex?R_L
+[v_in]: https://latex.codecogs.com/svg.latex?v_{in}
+[v_out]: https://latex.codecogs.com/svg.latex?v_{out}
+[i_in]: https://latex.codecogs.com/svg.latex?i_{in}
+[i_out]: https://latex.codecogs.com/svg.latex?i_{out}
 
-**Effetti di Carico**: Uno stadio si comporta come un amplificatore con generatore pilotato. Trovate [R_in][9] e [R_out][10], rappresenta il blocco centrale di un circuito di mezzo tra un generatore in ingresso [v_in][13] con resistenza [R_S][11] e un'uscita [v_out][14] con resistenza [R_L][12]. Si può ricavare l'uscita [v_out][14] in funzione dell'ingresso [v_in][13] (e quindi la funzione di trasferimento ![A](https://latex.codecogs.com/svg.latex?A_{v,s})) eseguendo semplici partitori.
+**Effetti di Carico**: Uno stadio si comporta come un amplificatore con generatore pilotato. Trovate ![R_in] e ![R_out], rappresenta il blocco centrale di un circuito di mezzo tra un generatore in ingresso ![v_in] con resistenza ![R_S] e un'uscita ![v_out] con resistenza ![R_L]. Si può ricavare l'uscita ![v_out] in funzione dell'ingresso ![v_in] (e quindi la funzione di trasferimento ![A](https://latex.codecogs.com/svg.latex?A_{v,s})) eseguendo semplici partitori.
 
 Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://latex.codecogs.com/svg.latex?v_{out}%20=%20v_{in}\frac{R_{in}}{R_{in}+R_S}A_v\frac{R_L}{R_L+R_{out}})
 
@@ -203,13 +203,13 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 
 **Invertente**: ![Invertente](https://latex.codecogs.com/svg.latex?A_v%20=%20-\frac{R_2}{R_1},%20R_{in}%20=%20R_1,%20R_{out}%20\to%200)
 
-[17]: ![R_1](https://latex.codecogs.com/svg.latex?R_1)
-[18]: ![R_2](https://latex.codecogs.com/svg.latex?R_2)
+[R_1]: https://latex.codecogs.com/svg.latex?R_1
+[R_2]: https://latex.codecogs.com/svg.latex?R_2
 
-* **Esponenziale**: Diodo su [R_1][17]
-* **Logaritmico**: Diodo su [R_2][18]
-* **Integratore**: Condensatore su [R_2][18]
-* **Derivatore**: Condensatore su [R_1][17]
+* **Esponenziale**: Diodo su ![R_1]
+* **Logaritmico**: Diodo su ![R_2]
+* **Integratore**: Condensatore su ![R_2]
+* **Derivatore**: Condensatore su ![R_1]
 
 *(Per tutti e 4: ![Condizioni](https://latex.codecogs.com/svg.latex?R_{out}%20=%200))*
 
