@@ -103,9 +103,13 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Valori Efficaci noti**: **solo** per ampiezze **simmetriche** (![V_eff noti](https://latex.codecogs.com/svg.latex?-V_p%20\to%20V_p,%20\%20-5V%20\to%205V,%20...)):
 
+[Onda Quadra]: https://latex.codecogs.com/svg.latex?v_{eff}%20=%20V_p
+[Sinusoidi]: https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}
+[Triangolari]: https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{3}}
+
 | **Onda Quadra** | **Sinusoidi** | **Triangolari** |
 | --------------- | ------------- | --------------- |
-| ![Onda Quadra](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20V_p) | ![Sinusoidi](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}) | ![Triangolari](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{3}}) |
+| ![Onda Quadra]  | ![Sinusoidi]  | ![Triangolari]  |
 
 **Circuito equivalente d'ingresso DSO**: è rappresentato dal parallelo tra un condensatore (decine di *pF*) e una resistenza (solitamente *1 MΩ*).
 
