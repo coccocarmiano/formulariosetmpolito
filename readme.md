@@ -143,7 +143,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 * Il **S**ource è sempre dov'è la corrente.
 * Il **G**ate sempre la sbarra.
-* Il **D**rain il rimanente. Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS][v_DS] o ![v_SD][v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS][v_GS] o ![v_SG][v_SG]), ricordando che ![v_XY][v_XY] è una tensione con la punta in *X* e la coda in *Y*.
+* Il **D**rain il rimanente. Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS] o ![v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS] o ![v_SG]), ricordando che ![v_XY] è una tensione con la punta in *X* e la coda in *Y*.
 
 **Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
 
@@ -246,15 +246,15 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 
 **Soglie**:
 
-[19]: ![V_S1 inv.](https://latex.codecogs.com/svg.latex?V_{S1}%20=%20V_S\frac{R_2}{R_2+R_1}+V_{OH}\frac{R_1}{R_1+R_2})
-[20]: ![V_S2 inv.](https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OL,%20V_S$%20sul%20$%27+%27)
-[21]: ![V_S1 non inv.](https://latex.codecogs.com/svg.latex?V_{S1}%20=%20V_S%20\left(1+\frac{R1}{R2}\right)%20-%20V_{OL}\frac{R1}{R2})
-[22]: ![V_S2 non inv.](https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OH,%20V_S$%20sul%20$%27-%27)
+[V_S1 inv.]: https://latex.codecogs.com/svg.latex?V_{S1}%20=%20V_S\frac{R_2}{R_2+R_1}+V_{OH}\frac{R_1}{R_1+R_2}
+[V_S2 inv.]: https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OL,%20V_S$%20sul%20$%27+%27
+[V_S1 non inv.]: https://latex.codecogs.com/svg.latex?V_{S1}%20=%20V_S%20\left(1+\frac{R1}{R2}\right)%20-%20V_{OL}\frac{R1}{R2}
+[V_S2 non inv.]: https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OH,%20V_S$%20sul%20$%27-%27
 
 | **Invertente**  | **Non Invertente**  |
-|:---------------:|:-------------------:|
-| [V_S1 inv.][19] | [V_S1 non inv.][21] |
-| [V_S2 inv.][20] | [V_S2 non inv.][22] |
+| --------------- | ------------------- |
+| ![V_S1 inv.]    | ![V_S1 non inv.]    |
+| ![V_S2 inv.]    | ![V_S2 non inv.]    |
 
 **Comparatori Reali**: ![Comparatori Reali](https://latex.codecogs.com/svg.latex?V_{S1/2,%20reale}%20=%20V_{S1/2,%20ideale}-V_{OFF})
 
