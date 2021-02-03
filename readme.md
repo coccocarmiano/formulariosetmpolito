@@ -65,12 +65,14 @@
 
 [Duty-Cycle]: https://latex.codecogs.com/svg.latex?D%20=%20\frac{t_{alto}}{T}
 [Lettura]: https://latex.codecogs.com/svg.latex?V_pp%20=%20k_v\cdot%20n_{div}
+[k_v]: https://latex.codecogs.com/svg.latex?k_v
 [Voltmetro a Doppia Rampa]: https://latex.codecogs.com/svg.latex?V_x%20=%20-\frac{T_2}{T_1}V_{rif}
 [Incertezza di Quantizzazione]: https://latex.codecogs.com/svg.latex?\delta%20f_q%20=%20\frac{1}{T_{mis}}
 [Frequenzimetro a Misura Diretta]: https://latex.codecogs.com/svg.latex?f_x%20=%20\frac{1}{t_x}%20=%20\frac{n}{T_c},%20\%20\%20T_x%20=%20nT_c
 [Risoluzione]: https://latex.codecogs.com/svg.latex?\delta%20f_x%20=%20\frac{1}{T_c}
 [Risoluzione Relativa]: https://latex.codecogs.com/svg.latex?\frac{\delta%20f_x}{f_x}%20=%20\frac{1}{n}
-[T_1]: https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T
+[T_1]: https://latex.codecogs.com/svg.latex?T_1
+[Valore T_1]: https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T
 [Riscaldamento di un Resistore]: https://latex.codecogs.com/svg.latex?T_{fin}%20-%20T_{amb}%20=%20R_{termica}\cdot%20P_{dissipata}
 [Potenza]: https://latex.codecogs.com/svg.latex?P%20=%20\frac{v_{eff}^2}{R}
 [v_eff]: (https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{A}{\sqrt{2}}
@@ -81,14 +83,14 @@
 | -                                                                   | Formula                                                      |
 |:------------------------------------------------------------------- |:------------------------------------------------------------ |
 | **Duty-Cycle**                                                      | ![Duty-Cycle]                                                |
-| **Sensibilità** (k_v)                                               | *altezza*, solitamente in *mV*, di un "quadratino".          |
+| **Sensibilità** (![k_v])                                            | *altezza*, solitamente in *mV*, di un "quadratino".          |
 | **Lettura**                                                         | ![Lettura]                                                   |
 | **Voltmetro a Doppia Rampa**                                        | ![Voltmetro a Doppia Rampa]                                  |
 | **Incertezza di Quantizzazione**                                    | ![Incertezza di Quantizzazione]                              |
 | **Frequenzimetro a Misura Diretta**                                 | ![Frequenzimetro a Misura Diretta]                           |
 | **Risoluzione**                                                     | ![Risoluzione]                                               |
 | **Risoluzione Relativa**                                            | ![Risoluzione Relativa]                                      |
-| **Scelta di T_1**                                                   | *n(t)* ruomore di periodo. ![T_1] (spesso *50 Hz*)           |
+| **Scelta di ![T_1]**                                                | *n(t)* ruomore di periodo. ![Valore T_1] (spesso *50 Hz*)    |
 | **Riscaldamento di un Resistore**                                   | ![Riscaldamento di un Resistore]                             |
 | **Ponte di Wheatstone**                                             | All'equilibrio, la *ddp* ai due nodi centrali è nulla.       |
 | **Potenza**                                                         | ![Potenza], per segnali sinusoidali ![v_eff]                 |
