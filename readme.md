@@ -1,16 +1,16 @@
 # Indice
-	- [Misure](#misure)
-		- [Errori](#errori)
-		- [Attrezzature](#attrezzature)
-	- [Elettronica](#elettronica)
-		- [Segnali](#segnali)
-		- [Diodi](#diodi)
-		- [Transistors](#transistors)
-		- [Stadi amplificatori](#stadi-amplificatori)
-		- [Amplificatori operazionali](#amplificatori-operazionali)
-		- [Limiti amplificatori operazionali](#limiti-amplificatori-operazionali)
-		- [Comparatori](#comparatori)
-		- [Oscillatori](#oscillatori)
+  - [Misure](#misure)
+    - [Errori](#errori)
+    - [Attrezzature](#attrezzature)
+  - [Elettronica](#elettronica)
+    - [Segnali](#segnali)
+    - [Diodi](#diodi)
+    - [Transistors](#transistors)
+    - [Stadi amplificatori](#stadi-amplificatori)
+    - [Amplificatori operazionali](#amplificatori-operazionali)
+    - [Limiti amplificatori operazionali](#limiti-amplificatori-operazionali)
+    - [Comparatori](#comparatori)
+    - [Oscillatori](#oscillatori)
 
 # Misure
 
