@@ -216,7 +216,7 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 
 **Common-Mode Rejection Ratio** (**CMRR**): ![CMRR](https://latex.codecogs.com/svg.latex?\bigg%20|\frac{A_d}{A_{cm}}%20\bigg%20|,%20\%20v_{cm}%20=%20\frac{v^++v^-}{2},%20\%20v_d%20=%20v^+-v^-)
 
-# Limiti Amplificatori Operazionali
+## Limiti Amplificatori Operazionali
 
 **Circuito Eq. in Linearità**: ![Circuito Eq. in Linearità](https://latex.codecogs.com/svg.latex?v_{out}%20=%20A_dv_d%20+A_{cm}v_{cm}+A_{ps}v_{ps})
 
