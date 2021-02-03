@@ -16,7 +16,7 @@
 
 ## Errori
 
-[comment]: (**Media**: ![Media](https://latex.codecogs.com/svg.latex?\mu%20=%20\frac{1}{N}\sum_i%20x_i)
+[comment]: (**Media**: ![Media](https://latex.codecogs.com/svg.latex?\mu%20=%20\frac{1}{N}\sum_i%20x_i))
 
 [comment]: (**Varianza**: ![Varianza](https://latex.codecogs.com/svg.latex?\sigma^2%20=%20\frac{1}{N-1}\sum%20(x_i%20-%20\mu)^2))
 
