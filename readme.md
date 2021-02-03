@@ -16,15 +16,15 @@
 
 ## Errori
 
-[comment]: (**Media**: ![Media](https://latex.codecogs.com/svg.latex?\mu%20=%20\frac{1}{N}\sum_i%20x_i))
+<!-- **Media**: ![Media](https://latex.codecogs.com/svg.latex?\mu%20=%20\frac{1}{N}\sum_i%20x_i) -->
 
-[comment]: (**Varianza**: ![Varianza](https://latex.codecogs.com/svg.latex?\sigma^2%20=%20\frac{1}{N-1}\sum%20(x_i%20-%20\mu)^2))
+<!-- **Varianza**: ![Varianza](https://latex.codecogs.com/svg.latex?\sigma^2%20=%20\frac{1}{N-1}\sum%20(x_i%20-%20\mu)^2) -->
 
 **Incertezza Tipica**: ![Incertezza Tipica](https://latex.codecogs.com/svg.latex?\pm%20(\%%20lettura%20+%20\%%20fondo\_scala))
 
 **Strumento di classe x**: lo strumento ha una precisione pari ad x% del fondo_scala
 
-[comment]: (L'incertezza va riportata con **al più** due cifre significative. (e.g.: ![Esempio](https://latex.codecogs.com/svg.latex?R%20=%20(4700%20\pm%2047)%20\Omega))
+<!-- L'incertezza va riportata con **al più** due cifre significative. (e.g.: ![Esempio](https://latex.codecogs.com/svg.latex?R%20=%20(4700%20\pm%2047)%20\Omega) -->
 
 **Errore Qualunque (Derivate Parziali)**: ![Errore qualunque](https://latex.codecogs.com/svg.latex?y%20=%20f(x_1,%20x_2,%20...)%20\to%20\delta%20y%20%20=%20\sum_i%20\Bigg%20|\frac{\partial%20f(\vec{x})}{\partial%20x_i}\Bigg%20|_{x=x_{mis}}%20\delta%20x_i)
 
@@ -38,17 +38,17 @@
 
 ## Attrezzature
 
-[comment]: (**Full-Scale Range**: ![Full-Scale Range](https://latex.codecogs.com/svg.latex?FSR%20=%20V_{max}%20-%20V_{min}))
+<!-- **Full-Scale Range**: ![Full-Scale Range](https://latex.codecogs.com/svg.latex?FSR%20=%20V_{max}%20-%20V_{min}) -->
 
-[comment]: (**Quantizzazione su N bit**: ![Quantizzazione su N bit](https://latex.codecogs.com/svg.latex?N%20=%20log_2(M)))
+<!-- **Quantizzazione su N bit**: ![Quantizzazione su N bit](https://latex.codecogs.com/svg.latex?N%20=%20log_2(M)) -->
 
-[comment]: (**Uscita Ricostruita**: ![Uscita Ricostruita](https://latex.codecogs.com/svg.latex?y%20=%20\sum_{i=0}^{n-1}%202^i\cdot%20B_i%20\%20\%20(B%20=%200%20\lor%20B%20=%201)))
+<!-- **Uscita Ricostruita**: ![Uscita Ricostruita](https://latex.codecogs.com/svg.latex?y%20=%20\sum_{i=0}^{n-1}%202^i\cdot%20B_i%20\%20\%20(B%20=%200%20\lor%20B%20=%201)) -->
 
-[comment]: (**MSB**: ![MSB](https://latex.codecogs.com/svg.latex?B_{n-1}))
+<!-- **MSB**: ![MSB](https://latex.codecogs.com/svg.latex?B_{n-1}) -->
 
-[comment]: (**LSB**: ![LSB](https://latex.codecogs.com/svg.latex?B_0))
+<!-- **LSB**: ![LSB](https://latex.codecogs.com/svg.latex?B_0) -->
 
-[comment]: (**Teorema del Campionamento** (B banda del segnale): ![Teorema del Campionamento](https://latex.codecogs.com/svg.latex?f_c%20\ge%202\cdot%20B))
+<!-- **Teorema del Campionamento** (B banda del segnale): ![Teorema del Campionamento](https://latex.codecogs.com/svg.latex?f_c%20\ge%202\cdot%20B) -->
 
 **Errore di Lettura** (Parallasse): valore di una "tacchetta"
 
@@ -83,9 +83,9 @@ Solitamente il ![Tso](https://latex.codecogs.com/svg.latex?t_{s,o}) è trascurab
 
 **Potenza**: ![Potenza](https://latex.codecogs.com/svg.latex?P%20=%20\frac{v_{eff}^2}{R}), per segnali sinusoidali ![v_eff](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{A}{\sqrt{2}})
 
-[comment]: (**Valor-Medio Segnale Raddrizzato** (Singola/Doppia Semionda): ![Valor-Medio Segnale Raddrizzato](https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{2\cdot%20V_p}{\pi}%20\neq%20v_{rms}))
+<!-- **Valor-Medio Segnale Raddrizzato** (Singola/Doppia Semionda): ![Valor-Medio Segnale Raddrizzato](https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{2\cdot%20V_p}{\pi}%20\neq%20v_{rms}) -->
 
-[comment]: (**Valore Efficace Segnale Raddrizzato**: ![Valore Efficace Segnale Raddrizzato](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}%20=%20k_s\cdot\frac{2\cdot%20V_p}{\pi}))
+<!-- **Valore Efficace Segnale Raddrizzato**: ![Valore Efficace Segnale Raddrizzato](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}%20=%20k_s\cdot\frac{2\cdot%20V_p}{\pi}) -->
 
 **Costante Strumentale**: ![k_s](https://latex.codecogs.com/svg.latex?k_s%20=%20\left\{%20%20%20%20\begin{array}{ll}%20%20%20%20%20%20%20%201.11%20&%20\text{semionda%20doppia}%20\\%20%20%20%20%20%20%20%202.22%20&%20\text{semionda%20singola}%20%20%20%20\end{array}\right.)
 
