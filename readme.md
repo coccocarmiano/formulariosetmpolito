@@ -142,7 +142,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 * Il **S**ource è sempre dov'è la corrente.
 * Il **G**ate sempre la sbarra.
-* Il **D**rain il rimanente. Per capire se usare [v_GS][1] o [v_SG][2], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà [3][v_DS] o [4][v_SD]) e una tra *Gate* e *Source* (che sarà [v_GS][1] o [v_SG][2]), ricordando che [v_XY][5] è una tensione con la punta in *X* e la coda in *Y*.
+* Il **D**rain il rimanente. Per capire se usare [1] o [2], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà [3] o [4]) e una tra *Gate* e *Source* (che sarà [1] o [2]), ricordando che [5] è una tensione con la punta in *X* e la coda in *Y*.
 
 **Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
 
