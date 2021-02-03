@@ -134,18 +134,19 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 [v_D]: https://latex.codecogs.com/svg.latex?v_D
 [i_D]: https://latex.codecogs.com/svg.latex?i_D
 [Diodo Reale]: https://latex.codecogs.com/svg.latex?i_D%20=%20I_s(e^{\frac{v_D}{\eta%20V_T}}-%201)
-[Diodo Ideale]: https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%200,%20ON%20\%20\big%20|%20\%20v_D%20%3C%200%20\to%20i_D%20=%200,%20OFF
-[Diodo Semi-Ideale]: https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%20V_\gamma,%20ON%20\%20\big%20|%20\%20v_D%20%3C%20V_\gamma%20\to%20i_D%20=%200,%20OFF
-[PD]: https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20\to%20\infty
-[Curva verticale]: https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_\gamma%20\simeq%200.6-0.7%20\%20V
-[PI]: https://latex.codecogs.com/svg.latex?v_D%20%3C%200
-[Resistenza di un Diodo]: https://latex.codecogs.com/svg.latex?g_D%20=%20\frac{1}{r_D}%20=%20\frac{I_D}{\eta%20V_T}
+[Diodo Ideale]: https://latex.codecogs.com/svg.latex?\begin{array}{ll}i_D%20%3E%200%20\to%20v_D%20=%200%20&%20ON%20\\v_D%20%3C%200%20\to%20i_D%20=%200%20&%20OFF\end{array}
+[Diodo Semi-Ideale]: https://latex.codecogs.com/svg.latex?\begin{array}{ll}i_D%20%3E%200%20\to%20v_D%20=%20V_\gamma%20&%20ON%20\\v_D%20%3C%20V_\gamma%20\to%20i_D%20=%200%20&%20OFF\end{array}
 
 | Diodo                  | Valori                                      |
 | ---------------------- | ------------------------------------------- |
 | **Diodo Reale**        | ![Diodo Reale]                              |
 | **Diodo Ideale**       | ![Diodo Ideale] (nel circuito: generatore)  |
 | **Diodo Semi-Ideale**  | ![Diodo Semi-Ideale] (nel circuito: corto)  |
+
+[PD]: https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20\to%20\infty
+[Curva verticale]: https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_\gamma%20\simeq%200.6-0.7%20\%20V
+[PI]: https://latex.codecogs.com/svg.latex?v_D%20%3C%200
+[Resistenza di un Diodo]: https://latex.codecogs.com/svg.latex?g_D%20=%20\frac{1}{r_D}%20=%20\frac{I_D}{\eta%20V_T}
 
 | -                                                                   | Formula                                                      |
 |:------------------------------------------------------------------- |:------------------------------------------------------------ |
