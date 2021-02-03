@@ -22,9 +22,9 @@
 [Esempio incertezza]: https://latex.codecogs.com/svg.latex?R%20=%20(4700%20\pm%2047)%20\Omega
 [Errore assoluto]: https://latex.codecogs.com/svg.latex?y%20=%20f(x_1,%20x_2,%20...)%20\to%20\delta%20y%20%20=%20\sum_i%20\Bigg%20|\frac{\partial%20f(\vec{x})}{\partial%20x_i}\Bigg%20|_{x=x_{mis}}%20\delta%20x_i
 [Errore relativo]: https://latex.codecogs.com/svg.latex?y$%20misura%20$\to%20\epsilon_r%20=%20\frac{\delta%20y}{y}%20\%20\%20(\epsilon_{r,%20\%}%20=%20100\cdot\epsilon_r)
-[Somma/Differenza]: https://latex.codecogs.com/svg.latex?y%20=%20a%20\pm%20b%20\to%20\delta%20y%20=%20\delta%20a%20+%20\delta%20b
-[Prodotto/Divisione]: https://latex.codecogs.com/svg.latex?y%20=%20a\cdot%20b^{\pm%201}%20\to%20\epsilon_y%20=%20\epsilon_a%20+%20\epsilon_b
-[Potenza Radice]: https://latex.codecogs.com/svg.latex?y%20=%20x^{\pm%20n}%20\to%20\epsilon_y%20=%20n^{\pm%201}\epsilon_x
+[Somma o Differenza]: https://latex.codecogs.com/svg.latex?y%20=%20a%20\pm%20b%20\to%20\delta%20y%20=%20\delta%20a%20+%20\delta%20b
+[Prodotto o Divisione]: https://latex.codecogs.com/svg.latex?y%20=%20a\cdot%20b^{\pm%201}%20\to%20\epsilon_y%20=%20\epsilon_a%20+%20\epsilon_b
+[Potenza o Radice]: https://latex.codecogs.com/svg.latex?y%20=%20x^{\pm%20n}%20\to%20\epsilon_y%20=%20n^{\pm%201}\epsilon_x
 
 | -                                                                   | Formula                                                      |
 |:------------------------------------------------------------------- |:------------------------------------------------------------ |
@@ -33,9 +33,9 @@
 | *L'incertezza va riportata con **al più** due cifre significative.* | (e.g.: ![Esempio incertezza]                                 |
 | **Errore Qualunque (Derivate Parziali)**                            | ![Errore assoluto]                                           |
 | **Errore Relativo**                                                 | ![Errore Relativo]                                           |
-| **Somma/Differenza**                                                | ![Somma/Differenza]                                          |
-| **Prodotto/Divisione**                                              | ![Prodotto/Divisione]                                        |
-| **Potenza/Radice**                                                  | ![Potenza Radice]                                            |
+| **Somma** o **Differenza**                                          | ![Somma o Differenza]                                        |
+| **Prodotto** o **Divisione**                                        | ![Prodotto o Divisione]                                      |
+| **Potenza** o **Radice**                                            | ![Potenza o Radice]                                          |
 
 ## Attrezzature
 
@@ -63,36 +63,39 @@
 | --------------- | ------------------- |
 | ![v_m]          | ![v_rms]            |
 
-**Duty-Cycle**: ![Duty-Cycle](https://latex.codecogs.com/svg.latex?D%20=%20\frac{t_{alto}}{T})
+[Duty-Cycle]: https://latex.codecogs.com/svg.latex?D%20=%20\frac{t_{alto}}{T}
+[Lettura]: https://latex.codecogs.com/svg.latex?V_pp%20=%20k_v\cdot%20n_{div}
+[Voltmetro a Doppia Rampa]: https://latex.codecogs.com/svg.latex?V_x%20=%20-\frac{T_2}{T_1}V_{rif}
+[Incertezza di Quantizzazione]: https://latex.codecogs.com/svg.latex?\delta%20f_q%20=%20\frac{1}{T_{mis}}
+[Frequenzimetro a Misura Diretta]: https://latex.codecogs.com/svg.latex?f_x%20=%20\frac{1}{t_x}%20=%20\frac{n}{T_c},%20\%20\%20T_x%20=%20nT_c
+[Risoluzione]: https://latex.codecogs.com/svg.latex?\delta%20f_x%20=%20\frac{1}{T_c}
+[Risoluzione Relativa]: https://latex.codecogs.com/svg.latex?\frac{\delta%20f_x}{f_x}%20=%20\frac{1}{n}
+[T_1]: https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T
+[Riscaldamento di un Resistore]: https://latex.codecogs.com/svg.latex?T_{fin}%20-%20T_{amb}%20=%20R_{termica}\cdot%20P_{dissipata}
+[Potenza]: https://latex.codecogs.com/svg.latex?P%20=%20\frac{v_{eff}^2}{R}), per segnali sinusoidali ![v_eff](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{A}{\sqrt{2}}
+[Valor-Medio Segnale Raddrizzato (Singola/Doppia Semionda)]: https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{2\cdot%20V_p}{\pi}%20\neq%20v_{rms}
+[Valore Efficace Segnale Raddrizzato]: https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}%20=%20k_s\cdot\frac{2\cdot%20V_p}{\pi}
+[k_s]: https://latex.codecogs.com/svg.latex?k_s%20=%20\left\{%20%20%20%20\begin{array}{ll}%20%20%20%20%20%20%20%201.11%20&%20\text{semionda%20doppia}%20\\%20%20%20%20%20%20%20%202.22%20&%20\text{semionda%20singola}%20%20%20%20\end{array}\right.
 
-**Sensibilità**: ![k_v](https://latex.codecogs.com/svg.latex?(k_v)) "altezza", solitamente in *mV*, di un "quadratino".
-
-**Lettura**: ![V_pp](https://latex.codecogs.com/svg.latex?V_{pp}) del segnale, ottenuta come ![Lettura](https://latex.codecogs.com/svg.latex?k_v\cdot%20n_{div}), ![n_div](https://latex.codecogs.com/svg.latex?n_{div}) altezza del segnale in "quadratini"
-
-**Voltmetro a Doppia Rampa**: ![Voltmetro a Doppia Rampa](https://latex.codecogs.com/svg.latex?V_x%20=%20-\frac{T_2}{T_1}V_{rif})
-**Incertezza di Quantizzazione**: ![Incertezza di Quantizzazione](https://latex.codecogs.com/svg.latex?\delta%20f_q%20=%20\frac{1}{T_{mis}})
-
-**Frequenzimetro a Misura Diretta**: ![Frequenzimetro a Misura Diretta](https://latex.codecogs.com/svg.latex?f_x%20=%20\frac{1}{t_x}%20=%20\frac{n}{T_c},%20\%20\%20T_x%20=%20nT_c)
-
-**Risoluzione**: ![Risoluzione](https://latex.codecogs.com/svg.latex?\delta%20f_x%20=%20\frac{1}{T_c})
-**Risoluzione Relativa**: ![Risoluzione Relativa](https://latex.codecogs.com/svg.latex?\frac{\delta%20f_x}{f_x}%20=%20\frac{1}{n})
-
-**Scelta di ![T_1](https://latex.codecogs.com/svg.latex?T_1)**: ![n(t)](https://latex.codecogs.com/svg.latex?n(t)) ruomore di periodo ![T](https://latex.codecogs.com/svg.latex?T%20\to%20T_1%20=%20T) (spesso *50 Hz*)
-
-**Riscaldamento di un Resistore**: ![Riscaldamento di un Resistore](https://latex.codecogs.com/svg.latex?T_{fin}%20-%20T_{amb}%20=%20R_{termica}\cdot%20P_{dissipata})
-
-**Ponte di Wheatstone**: All'equilibrio, la *ddp* ai due nodi centrali è nulla.
-
-**Potenza**: ![Potenza](https://latex.codecogs.com/svg.latex?P%20=%20\frac{v_{eff}^2}{R}), per segnali sinusoidali ![v_eff](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{A}{\sqrt{2}})
-
-<!-- **Valor-Medio Segnale Raddrizzato** (Singola/Doppia Semionda): ![Valor-Medio Segnale Raddrizzato](https://latex.codecogs.com/svg.latex?v_m%20=%20\frac{2\cdot%20V_p}{\pi}%20\neq%20v_{rms}) -->
-
-<!-- **Valore Efficace Segnale Raddrizzato**: ![Valore Efficace Segnale Raddrizzato](https://latex.codecogs.com/svg.latex?v_{eff}%20=%20\frac{V_p}{\sqrt{2}}%20=%20k_s\cdot\frac{2\cdot%20V_p}{\pi}) -->
-
-**Costante Strumentale**: ![k_s](https://latex.codecogs.com/svg.latex?k_s%20=%20\left\{%20%20%20%20\begin{array}{ll}%20%20%20%20%20%20%20%201.11%20&%20\text{semionda%20doppia}%20\\%20%20%20%20%20%20%20%202.22%20&%20\text{semionda%20singola}%20%20%20%20\end{array}\right.)
+| -                                                                   | Formula                                                      |
+|:------------------------------------------------------------------- |:------------------------------------------------------------ |
+| **Duty-Cycle**                                                      | ![Duty-Cycle]                                                |
+| **Sensibilità** (k_v)                                               | *altezza*, solitamente in *mV*, di un "quadratino".          |
+| **Lettura**                                                         | ![Lettura]                                                   |
+| **Voltmetro a Doppia Rampa**                                        | ![Voltmetro a Doppia Rampa]                                  |
+| **Incertezza di Quantizzazione**                                    | ![Incertezza di Quantizzazione]                              |
+| **Frequenzimetro a Misura Diretta**                                 | ![Frequenzimetro a Misura Diretta]                           |
+| **Risoluzione**                                                     | ![Risoluzione]                                               |
+| **Risoluzione Relativa**                                            | ![Risoluzione Relativa]                                      |
+| **Scelta di T_1**                                                   | *n(t)* ruomore di periodo. ![T_1] (spesso *50 Hz*)           |
+| **Riscaldamento di un Resistore**                                   | ![Riscaldamento di un Resistore]                             |
+| **Ponte di Wheatstone**                                             | All'equilibrio, la *ddp* ai due nodi centrali è nulla.       |
+| **Potenza**                                                         | ![Potenza]                                                   |
+| **Costante Strumentale**                                            | ![k_s]                                                       |
 
 Gli strumenti spesso riportano il valore efficace di un segnale.
 Questo valore è pari alla costante strumentale moltiplicata per valor medio del segnale.
+
 **!** Nel calcolo del valor medio con voltmetro a semionda semplice della semionda semplice la parte negativa del segnale viene azzerata.
 
 **Condensatore in ingresso / Voltmetri TRMS**: I voltmetri TRMS restituiscono la lettura reale del valore efficace di un segnale. Tuttavia vengono spesso **accoppiati in AC** (filtro sulla componente DC), riportando così il **valore efficace del segnale originale traslato in basso del suo valor medio**.
