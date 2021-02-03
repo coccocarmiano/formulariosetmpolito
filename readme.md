@@ -160,7 +160,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Corrente di Gate**: ![Corrente di Gate] in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
 
-[v_GS]: https://latex.codecogs.com/svg.latex?v_%7BGS%7D
+[v_GS]: https://latex.codecogs.com/png.latex?v_%7BGS%7D
 [v_SG]: https://latex.codecogs.com/svg.latex?v_%7BSG%7D
 [v_DS]: https://latex.codecogs.com/svg.latex?v_%7BDS%7D
 [v_SD]: https://latex.codecogs.com/svg.latex?v_%7BSD%7D
