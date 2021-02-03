@@ -34,7 +34,7 @@
 
 **Prodotto/Divisione**: ![Prodotto/Divisione](https://latex.codecogs.com/svg.latex?y%20=%20a\cdot%20b^{\pm%201}%20\to%20\epsilon_y%20=%20\epsilon_a%20+%20\epsilon_b)
 
-**Potenza/Radice**: ![Potenza/Radice](https://latex.codecogs.com/svg.latex?y%20=%20x^{\pm%20n}%20\to%20\epsilon_y%20=%20n^{\pm%201}\epsilon_x)
+**Potenza/Radice**: ![Potenza Radice](https://latex.codecogs.com/svg.latex?y%20=%20x^{\pm%20n}%20\to%20\epsilon_y%20=%20n^{\pm%201}\epsilon_x)
 
 ## Attrezzature
 
