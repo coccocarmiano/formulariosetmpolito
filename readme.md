@@ -130,19 +130,19 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Corrente di Gate**: ![Corrente di Gate](https://latex.codecogs.com/svg.latex?i_G%20=%200) in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
 
-| **nMOS**: |[nMOS](https://latex.codecogs.com/svg.latex?v_{GS},%20\%20v_{DS}) | **pMOS**: ![pMOS](https://latex.codecogs.com/svg.latex?v_{SG},%20\%20v_{SD}) |
+| **nMOS**: ![nMOS](https://latex.codecogs.com/svg.latex?v_{GS},%20\%20v_{DS}) | **pMOS**: ![pMOS](https://latex.codecogs.com/svg.latex?v_{SG},%20\%20v_{SD}) |
 
 ***Trucco Mnemonico***:
 
-[1]: ![v_GS](https://latex.codecogs.com/svg.latex?v_{GS})
-[2]: ![v_SG](https://latex.codecogs.com/svg.latex?v_{SG})
-[3]: ![v_DS](https://latex.codecogs.com/svg.latex?v_{DS})
-[4]: ![v_SD](https://latex.codecogs.com/svg.latex?v_{SD})
-[5]: ![v_XY](https://latex.codecogs.com/svg.latex?v_{XY})
+[v_GS]: https://latex.codecogs.com/svg.latex?v_{GS}
+[v_SG]: https://latex.codecogs.com/svg.latex?v_{SG}
+[v_DS]: https://latex.codecogs.com/svg.latex?v_{DS}
+[v_SD]: https://latex.codecogs.com/svg.latex?v_{SD}
+[v_XY]: https://latex.codecogs.com/svg.latex?v_{XY}
 
 * Il **S**ource è sempre dov'è la corrente.
 * Il **G**ate sempre la sbarra.
-* Il **D**rain il rimanente. Per capire se usare [1] o [2], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà [3] o [4]) e una tra *Gate* e *Source* (che sarà [1] o [2]), ricordando che [5] è una tensione con la punta in *X* e la coda in *Y*.
+* Il **D**rain il rimanente. Per capire se usare ![v_GS][v_GS] o ![v_SG][v_SG], bisogna posizionare due tensioni verso l'alto, una tra le due "gambe" del transistor (che sarà ![v_DS][v_DS] o ![v_SD][v_SD]) e una tra *Gate* e *Source* (che sarà ![v_GS][v_GS] o ![v_SG][v_SG]), ricordando che ![v_XY][v_XY] è una tensione con la punta in *X* e la coda in *Y*.
 
 **Condizioni Saturazione**: ![Condizioni Saturazione](https://latex.codecogs.com/svg.latex?v_{GS/SG}%20%3E%20V_{TH},%20\%20v_{DS/SD}%20%3E%20v_{GS/SG}%20-%20V_{TH})
 
@@ -249,7 +249,7 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 [22]: ![V_S2 non inv.](https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OH,%20V_S$%20sul%20$%27-%27)
 
 | **Invertente**  | **Non Invertente**  |
-|---------------------------------------|
+|:---------------:|:-------------------:|
 | [V_S1 inv.][19] | [V_S1 non inv.][21] |
 | [V_S2 inv.][20] | [V_S2 non inv.][22] |
 
