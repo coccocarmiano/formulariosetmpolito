@@ -54,7 +54,7 @@
 | **Errore di Lettura** (Parallasse)                                  | Valore di una "tacchetta"                                    |
 | **Prodotto Banda Guadagno** (varia col modello dell'oscilloscopio)  | ![Prodotto Banda Guadagno]                                   |
 | **Relazione Salita-Visualizzato**                                   | ![Relazione Salita-Visualizzato]                             |
-| *Solitamente il ![t_so] è trascurabile.*                                                                                           |
+| ![t_so]                                                             | Solitamente trascurabile                                     |
 
 [v_m]: https://latex.codecogs.com/svg.latex?v_m%20%3D%20%5Cfrac%7B1%7D%7BT%7D%20%5Cint_%7Bt_0%7D%5E%7Bt_0+T%7D%20v(t)dt
 [v_rms]: https://latex.codecogs.com/svg.latex?v_%7Brms%7D%3D%20%5Csqrt%7B%5Cfrac%7B1%7D%7BT%7D%20%5Cint_%7Bt_0%7D%5E%7Bt_0+T%7D%20v%5E2(t)dt%7D
@@ -103,7 +103,7 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Condensatore in ingresso / Voltmetri TRMS**: I voltmetri TRMS restituiscono la lettura reale del valore efficace di un segnale. Tuttavia vengono spesso **accoppiati in AC** (filtro sulla componente DC), riportando così il **valore efficace del segnale originale traslato in basso del suo valor medio**.
 
-**Valori Efficaci noti**: **solo** per ampiezze **simmetriche** (![V_eff noti](https://latex.codecogs.com/svg.latex?-V_p%20%5Cto%20V_p,%20%5C%20-5V%20%5Cto%205V,%20...)):
+**Valori Efficaci noti**: **solo** per ampiezze **simmetriche** ![V_eff noti](https://latex.codecogs.com/svg.latex?%28-V_p%20%5Cto%20V_p,%20%5C%20-5V%20%5Cto%205V,%20...%29):
 
 [Onda Quadra]: https://latex.codecogs.com/svg.latex?v_%7Beff%7D%20%3D%20V_p
 [Sinusoidi]: https://latex.codecogs.com/svg.latex?v_%7Beff%7D%20%3D%20%5Cfrac%7BV_p%7D%7B%5Csqrt%7B2%7D%7D
@@ -295,7 +295,6 @@ Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_%7Bout%7D%20%3D%200):
 [A_d]: https://latex.codecogs.com/svg.latex?A_d%20%3D%20-9
 [Rapporto]: https://latex.codecogs.com/svg.latex?%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%209
 [Risultato]: https://latex.codecogs.com/svg.latex?%5Cbeta%20%3D%201%20+%20%5Cfrac%7BR_2%7D%7BR_1%7D%20%3D%2010
-[Slew-Rate]: 
 [V_OFF]: https://latex.codecogs.com/svg.latex?V_%7BOFF%7D
 [Corrente morsetti]: https://latex.codecogs.com/svg.latex?I%5E+/I%5E-%20%3D%20I_%7BBIAS%7D+%5Cfrac%7BI_%7BOFF%7D%7D%7B2%7D
 [Corrente uscente]: https://latex.codecogs.com/svg.latex?I_%7BBIAS%7D%20%3D%20%5Cfrac%7BI%5E++I%5E-%7D%7B2%7D,%20%5C%20I_%7BOFF%7D%20%3D%20I%5E++I%5E-
