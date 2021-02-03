@@ -131,17 +131,12 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 [v_D]: https://latex.codecogs.com/svg.latex?v_D
 [i_D]: https://latex.codecogs.com/svg.latex?i_D
-[Polarizzazione Diretta]: https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20\to%20\infty
-[Curva verticale]: https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_\gamma%20\simeq%200.6-0.7%20\%20V
-[Polarizzazione Inversa]: https://latex.codecogs.com/svg.latex?v_D%20%3C%200
-
-**Polarizzazione Diretta**: ![Polarizzazione Diretta], curva verticale per ![Curva verticale]
-
-**Polarizzazione Inversa**: ![Polarizzazione Inversa], ![i_D] satura a valori piccoli e negativi (*pA-fA*)
-
 [Diodo Reale]: https://latex.codecogs.com/svg.latex?i_D%20=%20I_s(e^{\frac{v_D}{\eta%20V_T}}-%201)
 [Diodo Ideale]: https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%200,%20ON%20\%20\big%20|%20\%20v_D%20%3C%200%20\to%20i_D%20=%200,%20OFF
 [Diodo Semi-Ideale]: https://latex.codecogs.com/svg.latex?i_D%20%3E%200%20\to%20v_D%20=%20V_\gamma,%20ON%20\%20\big%20|%20\%20v_D%20%3C%20V_\gamma%20\to%20i_D%20=%200,%20OFF
+[PD]: https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20\to%20\infty
+[Curva verticale]: https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_\gamma%20\simeq%200.6-0.7%20\%20V
+[PI]: https://latex.codecogs.com/svg.latex?v_D%20%3C%200
 [Resistenza di un Diodo]: https://latex.codecogs.com/svg.latex?g_D%20=%20\frac{1}{r_D}%20=%20\frac{I_D}{\eta%20V_T}
 
 | Diodo                  | Valori                                      |
@@ -150,11 +145,17 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 | **Diodo Ideale**       | ![Diodo Ideale] (nel circuito: generatore)  |
 | **Diodo Semi-Ideale**  | ![Diodo Semi-Ideale] (nel circuito: corto)  |
 
-**Resistenza di un Diodo (Piccolo Segnale)**: ![Resistenza di un Diodo]
+| -                                                                   | Formula                                                      |
+|:------------------------------------------------------------------- |:------------------------------------------------------------ |
+| **Polarizzazione Diretta**                                          | ![PD], curva verticale per ![Curva verticale]                |
+| **Polarizzazione Inversa**                                          | ![PI], ![i_D] satura a valori piccoli e negativi (*pA-fA*)   |
+| **Resistenza di un Diodo (Piccolo Segnale)**                        | ![Resistenza di un Diodo]                                    |
 
 ## Transistors
 
-**Corrente di Gate**: ![Corrente di Gate](https://latex.codecogs.com/svg.latex?i_G%20=%200) in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
+[Corrente di Gate]: https://latex.codecogs.com/svg.latex?i_G%20=%200
+
+**Corrente di Gate**: ![Corrente di Gate] in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
 
 [nMOS]: https://latex.codecogs.com/svg.latex?v_{GS},%20\%20v_{DS}
 [pMOS]: https://latex.codecogs.com/svg.latex?v_{SG},%20\%20v_{SD}
@@ -204,12 +205,14 @@ Per capire se usare ![v_GS] o ![v_SG], bisogna posizionare due tensioni verso l'
 [Transresistenza]: https://latex.codecogs.com/svg.latex?v_{out}%20=%20R_mi_s
 [Transresistenza ideale]: https://latex.codecogs.com/svg.latex?R_{in}%20\to%200,%20R_{out}%20\to%200
 
-| **Tensione Ideale** | **Corrente Ideale** | **Transconduttanza** | **Transresistenza** |
-| ------------------- | ------------------- | -------------------- | ------------------- |
-| ![Tensione Ideale]  | ![Corrente Ideale]  | ![Transconduttanza]  | ![Transresistenza]  |
-|   |   | ideale se: ![Transconduttanza ideale] | ideale se: ![Transresistenza ideale] |
+| **Tensione Ideale** | **Corrente Ideale** | **Transconduttanza**                  | **Transresistenza**                  |
+| ------------------- | ------------------- | ------------------------------------- | ------------------------------------ |
+| ![Tensione Ideale]  | ![Corrente Ideale]  | ![Transconduttanza]                   | ![Transresistenza]                   |
+|                     |                     | ideale se: ![Transconduttanza ideale] | ideale se: ![Transresistenza ideale] |
 
-**Efficienza Amplificatore Potenza**: ![Efficienza Amplificatore Potenza](https://latex.codecogs.com/svg.latex?\eta%20=%20\frac{P_{out}}{P_{al}+P_{in}}%20\simeq%20\frac{P_{out}}{P_{al}})
+[Efficienza Amplificatore Potenza]: https://latex.codecogs.com/svg.latex?\eta%20=%20\frac{P_{out}}{P_{al}+P_{in}}%20\simeq%20\frac{P_{out}}{P_{al}}
+
+**Efficienza Amplificatore Potenza**: ![Efficienza Amplificatore Potenza]
 
 [CS]: https://latex.codecogs.com/svg.latex?A_v%20%3C%200,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\in%20\mathbb{R}
 [CD]: https://latex.codecogs.com/svg.latex?A_v%20%3C%201,%20\%20R_{in}%20\to%20\infty,%20\%20R_{out}%20\simeq%20\frac{1}{g_m}
@@ -234,19 +237,23 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 
 ## Amplificatori Operazionali
 
-**Relazione Fondamentale** (ideale): ![Relazione fondamentale](https://latex.codecogs.com/svg.latex?v_d%20=%200%20\to%20v^+%20=%20v^-,%20\%20\%20\%20i^+%20=%20i^-%20=%200)
+[Relazione Fondamentale]: https://latex.codecogs.com/svg.latex?v_d%20=%200%20\to%20v^+%20=%20v^-,%20\%20\%20\%20i^+%20=%20i^-%20=%200
+[Amplificatore di Tensione]: https://latex.codecogs.com/svg.latex?A_v%20=%201+\frac{R_2}{R_1},%20R_{in}%20\to%20\infty,%20R_{out}%20\to%200
+[Amplificatore di Transconduttanza]: https://latex.codecogs.com/svg.latex?G_m%20=%20\frac{1}{R}%20\%20$(quella%20in%20retroazione)$,%20R_{in}%20\to%20\infty,%20R_{out}%20\to%20\infty
+[Amplificatore di Transresistenza]: https://latex.codecogs.com/svg.latex?R_m%20=%20R%20\%20$(quella%20in%20retroazione)$,%20R_{in}%20\to%200,%20R_{out}%20\to%200
+[Amplificatore di Corrente]: https://latex.codecogs.com/svg.latex?A_i%20=%201+\frac{R_2}{R_1},%20R_{in}%20\to%200,%20R_{out}%20\to%20\infty
+[Voltage-Follower]: https://latex.codecogs.com/svg.latex?v_{out}%20=%20v_{in},%20R_{in}%20\to%20\infty,%20R_{out}%20\to%200
+[Invertente]: https://latex.codecogs.com/svg.latex?A_v%20=%20-\frac{R_2}{R_1},%20R_{in}%20=%20R_1,%20R_{out}%20\to%200
 
-**Amplificatore di Tensione**: ![Amplificatore di Tensione](https://latex.codecogs.com/svg.latex?A_v%20=%201+\frac{R_2}{R_1},%20R_{in}%20\to%20\infty,%20R_{out}%20\to%200)
-
-**Amplificatore di Transconduttanza**: ![Amplificatore di Transconduttanza](https://latex.codecogs.com/svg.latex?G_m%20=%20\frac{1}{R}%20\%20$(quella%20in%20retroazione)$,%20R_{in}%20\to%20\infty,%20R_{out}%20\to%20\infty)
-
-**Amplificatore di Transresistenza**: ![Amplificatore di Transresistenza](https://latex.codecogs.com/svg.latex?R_m%20=%20R%20\%20$(quella%20in%20retroazione)$,%20R_{in}%20\to%200,%20R_{out}%20\to%200)
-
-**Amplificatore di Corrente**: ![Amplificatore di Corrente](https://latex.codecogs.com/svg.latex?A_i%20=%201+\frac{R_2}{R_1},%20R_{in}%20\to%200,%20R_{out}%20\to%20\infty)
-
-**Voltage-Follower**: ![Voltage-Follower](https://latex.codecogs.com/svg.latex?v_{out}%20=%20v_{in},%20R_{in}%20\to%20\infty,%20R_{out}%20\to%200)
-
-**Invertente**: ![Invertente](https://latex.codecogs.com/svg.latex?A_v%20=%20-\frac{R_2}{R_1},%20R_{in}%20=%20R_1,%20R_{out}%20\to%200)
+| -                                                                   | Formula                                                      |
+|:------------------------------------------------------------------- |:------------------------------------------------------------ |
+| **Relazione Fondamentale** (ideale)                                 | ![Relazione fondamentale]                                    |
+| **Amplificatore di Tensione**                                       | ![Amplificatore di Tensione]                                 |
+| **Amplificatore di Transconduttanza**                               | ![Amplificatore di Transconduttanza]                         |
+| **Amplificatore di Transresistenza**                                | ![Amplificatore di Transresistenza]                          |
+| **Amplificatore di Corrente**                                       | ![Amplificatore di Corrente]                                 |
+| **Voltage-Follower**                                                | ![Voltage-Follower]                                          |
+| **Invertente**                                                      | ![Invertente]                                                |
 
 [R_1]: https://latex.codecogs.com/svg.latex?R_1
 [R_2]: https://latex.codecogs.com/svg.latex?R_2
