@@ -245,52 +245,71 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 [Voltage-Follower]: https://latex.codecogs.com/svg.latex?v_{out}%20=%20v_{in},%20R_{in}%20\to%20\infty,%20R_{out}%20\to%200
 [Invertente]: https://latex.codecogs.com/svg.latex?A_v%20=%20-\frac{R_2}{R_1},%20R_{in}%20=%20R_1,%20R_{out}%20\to%200
 
-| -                                                                   | Formula                                                      |
-|:------------------------------------------------------------------- |:------------------------------------------------------------ |
-| **Relazione Fondamentale** (ideale)                                 | ![Relazione fondamentale]                                    |
-| **Amplificatore di Tensione**                                       | ![Amplificatore di Tensione]                                 |
-| **Amplificatore di Transconduttanza**                               | ![Amplificatore di Transconduttanza]                         |
-| **Amplificatore di Transresistenza**                                | ![Amplificatore di Transresistenza]                          |
-| **Amplificatore di Corrente**                                       | ![Amplificatore di Corrente]                                 |
-| **Voltage-Follower**                                                | ![Voltage-Follower]                                          |
-| **Invertente**                                                      | ![Invertente]                                                |
+**Relazione Fondamentale** (ideale): ![Relazione fondamentale]
+
+| Amplificatore                          | Valori                                |
+|:---------------------------------------|:------------------------------------- |
+| **Amplificatore di Tensione**          | ![Amplificatore di Tensione]          |
+| **Amplificatore di Transconduttanza**  | ![Amplificatore di Transconduttanza]  |
+| **Amplificatore di Transresistenza**   | ![Amplificatore di Transresistenza]   |
+| **Amplificatore di Corrente**          | ![Amplificatore di Corrente]          |
+| **Voltage-Follower**                   | ![Voltage-Follower]                   |
+| **Invertente**                         | ![Invertente]                         |
 
 [R_1]: https://latex.codecogs.com/svg.latex?R_1
 [R_2]: https://latex.codecogs.com/svg.latex?R_2
+
+Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_{out}%20=%200):
 
 * **Esponenziale**: Diodo su ![R_1]
 * **Logaritmico**: Diodo su ![R_2]
 * **Integratore**: Condensatore su ![R_2]
 * **Derivatore**: Condensatore su ![R_1]
 
-*(Per tutti e 4: ![Condizioni](https://latex.codecogs.com/svg.latex?R_{out}%20=%200))*
+[Sommatore Generalizzato]: https://latex.codecogs.com/svg.latex?v_{out}%20=%20\frac{\sum_{i=0}^M%20G_{i^-}%20+%20G_f}{\sum_{i=0}^N%20G_{i^+}}%20\sum_{i=1}^N%20\frac{G_{i^+}}{G_f}v_{i^+}-\sum_{i=1}^M\frac{G_{i^-}}{G_f}v_{i^-}
+[CMRR]: https://latex.codecogs.com/svg.latex?\bigg%20|\frac{A_d}{A_{cm}}%20\bigg%20|,%20\%20v_{cm}%20=%20\frac{v^++v^-}{2},%20\%20v_d%20=%20v^+-v^-
 
-**Sommatore Generalizzato**: ![Sommatore Generalizzato](https://latex.codecogs.com/svg.latex?v_{out}%20=%20\frac{\sum_{i=0}^M%20G_{i^-}%20+%20G_f}{\sum_{i=0}^N%20G_{i^+}}%20\sum_{i=1}^N%20\frac{G_{i^+}}{G_f}v_{i^+}-\sum_{i=1}^M\frac{G_{i^-}}{G_f}v_{i^-})
+**Sommatore Generalizzato**: ![Sommatore Generalizzato]
 
 *(Non usare questa formula, meglio **sovrapposizione** e/o **Millman**)*
 
-**Common-Mode Rejection Ratio** (**CMRR**): ![CMRR](https://latex.codecogs.com/svg.latex?\bigg%20|\frac{A_d}{A_{cm}}%20\bigg%20|,%20\%20v_{cm}%20=%20\frac{v^++v^-}{2},%20\%20v_d%20=%20v^+-v^-)
+**Common-Mode Rejection Ratio** (**CMRR**): ![CMRR]
 
 ## Limiti Amplificatori Operazionali
 
-**Circuito Eq. in Linearità**: ![Circuito Eq. in Linearità](https://latex.codecogs.com/svg.latex?v_{out}%20=%20A_dv_d%20+A_{cm}v_{cm}+A_{ps}v_{ps})
+[Circuito Eq. in Linearità]: https://latex.codecogs.com/svg.latex?v_{out}%20=%20A_dv_d%20+A_{cm}v_{cm}+A_{ps}v_{ps}
+[Amplificazione Differenziale Finita]: https://latex.codecogs.com/svg.latex?A_v%20=%20\frac{\beta%20A_d}{1+\beta%20A_d}\frac{1}{\beta}%20=%20\frac{1}{\beta}$%20se%20$A_d%20\to%20\infty
+[Prodotto Banda-Guadagno]: https://latex.codecogs.com/svg.latex?B%20=%20\beta%20f_T
+[Parametro Beta]: https://latex.codecogs.com/svg.latex?\beta%20=%20-\frac{v_d}{\hat{e}}%20=%20-\frac{v_d}{A_dv_d%20+%20A_{cm}v_{cm}%20+%20...}
 
-**Amplificazione Differenziale Finita**: ![Amplificazione Differenziale Finita](https://latex.codecogs.com/svg.latex?A_v%20=%20\frac{\beta%20A_d}{1+\beta%20A_d}\frac{1}{\beta}%20=%20\frac{1}{\beta}$%20se%20$A_d%20\to%20\infty)
+| -                                          | Formula                                 |
+|:-------------------------------------------|:--------------------------------------- |
+| **Circuito Eq. in Linearità**              | ![Circuito Eq. in Linearità]            |
+| **Amplificazione Differenziale Finita**    | ![Amplificazione Differenziale Finita]  |
+| **Prodotto Banda-Guadagno**                | ![Prodotto Banda-Guadagno]              |
+| **Parametro Beta**                         | ![Parametro Beta]                       |
 
-**Prodotto Banda-Guadagno**: ![Prodotto Banda-Guadagno](https://latex.codecogs.com/svg.latex?B%20=%20\beta%20f_T)
-**Parametro Beta**: ![Beta](https://latex.codecogs.com/svg.latex?\beta%20=%20-\frac{v_d}{\hat{e}}%20=%20-\frac{v_d}{A_dv_d%20+%20A_{cm}v_{cm}%20+%20...})
+[Parametri]: https://latex.codecogs.com/svg.latex?A_{cm}%20\simeq%200,\%20R_{in}%20\to%20\infty,%20...
+[Beta]: https://latex.codecogs.com/svg.latex?\beta%20=%201%20+%20\frac{R_2}{R_1}
+[A_d]: https://latex.codecogs.com/svg.latex?A_d%20=%20-9
+[Rapporto]: https://latex.codecogs.com/svg.latex?\frac{R_2}{R_1}%20=%209
+[Risultato]: https://latex.codecogs.com/svg.latex?\beta%20=%201%20+%20\frac{R_2}{R_1}%20=%2010
+[Slew-Rate]: https://latex.codecogs.com/svg.latex?\bigg%20|\frac{dv}{dt}\bigg%20|_{max}%20\leq%20\bigg%20|SR\bigg%20|
+[V_OFF]: https://latex.codecogs.com/svg.latex?V_{OFF}
+[Corrente]: https://latex.codecogs.com/svg.latex?I^+/I^-%20=%20I_{BIAS}+\frac{I_{OFF}}{2}
+[Corrente uscente]: https://latex.codecogs.com/svg.latex?I_{BIAS}%20=%20\frac{I^++I^-}{2},%20\%20I_{OFF}%20=%20I^++I^-
 
-**Casi Particolari**: Ad esempio operazionale ideale con parametri canonici (![Parametri](https://latex.codecogs.com/svg.latex?A_{cm}%20\simeq%200,\%20R_{in}%20\to%20\infty,%20...)) allora ![Beta](https://latex.codecogs.com/svg.latex?\beta%20=%201%20+%20\frac{R_2}{R_1}), per invertenti e non-invertenti.
+**Casi Particolari**: Ad esempio operazionale ideale con parametri canonici (![Parametri]) allora ![Beta], per invertenti e non-invertenti.
 
-(Esempio: se invertente con ![A_d](https://latex.codecogs.com/svg.latex?A_d%20=%20-9), allora ![Rapporto](https://latex.codecogs.com/svg.latex?\frac{R_2}{R_1}%20=%209) da cui ![Beta](https://latex.codecogs.com/svg.latex?\beta%20=%201%20+%20\frac{R_2}{R_1}%20=%2010))
+(Esempio: se invertente con ![A_d], allora ![Rapporto] da cui ![Risultato])
 
-**Slew-Rate**: ![Slew-Rate](https://latex.codecogs.com/svg.latex?\bigg%20|\frac{dv}{dt}\bigg%20|_{max}%20\leq%20\bigg%20|SR\bigg%20|). Ipotizziamo sinusoide in ingresso amplificata all'uscita.
+**Slew-Rate** (**SR**): ![Slew-Rate]. Ipotizziamo sinusoide in ingresso amplificata all'uscita.
 
-![dv/dt](https://latex.codecogs.com/svg.latex?\bigg%20|\frac{\partial}{\partial{t}}%20V_{in}A_vsin(\omega%20t)\bigg%20|_{max}\leq%20\bigg%20|SR\bigg%20|). Quindi: ![Risultato](https://latex.codecogs.com/svg.latex?\bigg%20|\omega%20A_vV_{in}\bigg%20|%20=%20\bigg%20|2\pi%20fA_vV_{in}\bigg%20|%20\leq%20\bigg%20|%20SR%20\bigg%20|)
+![dv/dt](https://latex.codecogs.com/svg.latex?\bigg%20|\frac{\partial}{\partial{t}}%20V_{in}A_vsin(\omega%20t)\bigg%20|_{max}\leq%20\bigg%20|SR\bigg%20|%20\implies%20\displaystyle%20\bigg%20|\omega%20A_vV_{in}\bigg%20|%20=%20\bigg%20|2\pi%20fA_vV_{in}\bigg%20|%20\leq%20\bigg%20|%20SR%20\bigg%20|)
 
-**Offset di Tensione**: ![V_OFF](https://latex.codecogs.com/svg.latex?V_{OFF}) collegata al morsetto *+*
+**Offset di Tensione**: ![V_OFF] collegata al morsetto *+*
 
-**Correnti di Polarizzazione**: Corrente ![Corrente](https://latex.codecogs.com/svg.latex?I^+/I^-%20=%20I_{BIAS}+\frac{I_{OFF}}{2}) ai due morsetti, uscente ![Corrente uscente](https://latex.codecogs.com/svg.latex?I_{BIAS}%20=%20\frac{I^++I^-}{2},%20\%20I_{OFF}%20=%20I^++I^-)
+**Correnti di Polarizzazione**: Corrente ![Corrente] ai due morsetti, uscente ![Corrente uscente]
 
 ## Comparatori
 
@@ -302,13 +321,14 @@ Esempio: se lo stadio è un partitore di tensione, allora ![Esempio](https://lat
 [V_S2 inv.]: https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OL,%20V_S$%20sul%20$%27+%27
 [V_S1 non inv.]: https://latex.codecogs.com/svg.latex?V_{S1}%20=%20V_S%20\left(1+\frac{R1}{R2}\right)%20-%20V_{OL}\frac{R1}{R2}
 [V_S2 non inv.]: https://latex.codecogs.com/svg.latex?V_{S2}%20=%20V_{S1}$%20ma%20con%20$OH,%20V_S$%20sul%20$%27-%27
+[Comparatori Reali]: https://latex.codecogs.com/svg.latex?V_{S1/2,%20reale}%20=%20V_{S1/2,%20ideale}-V_{OFF}
 
 | **Invertente**  | **Non Invertente**  |
 | --------------- | ------------------- |
 | ![V_S1 inv.]    | ![V_S1 non inv.]    |
 | ![V_S2 inv.]    | ![V_S2 non inv.]    |
 
-**Comparatori Reali**: ![Comparatori Reali](https://latex.codecogs.com/svg.latex?V_{S1/2,%20reale}%20=%20V_{S1/2,%20ideale}-V_{OFF})
+**Comparatori Reali**: ![Comparatori Reali]
 
 ## Oscillatori
 
