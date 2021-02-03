@@ -157,20 +157,15 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 
 **Corrente di Gate**: ![Corrente di Gate] in condizioni statiche per *NMOS* e *PMOS*. (*BJT* > 0)
 
-[nMOS]: https://latex.codecogs.com/svg.latex?v_{GS},%20\%20v_{DS}
-[pMOS]: https://latex.codecogs.com/svg.latex?v_{SG},%20\%20v_{SD}
-
-| nMOS    | pMOS    |
-| ----    | ----    |
-| ![nMOS] | ![pMOS] |
-
-***Trucco Mnemonico***:
-
 [v_GS]: https://latex.codecogs.com/svg.latex?v_{GS}
 [v_SG]: https://latex.codecogs.com/svg.latex?v_{SG}
 [v_DS]: https://latex.codecogs.com/svg.latex?v_{DS}
 [v_SD]: https://latex.codecogs.com/svg.latex?v_{SD}
 [v_XY]: https://latex.codecogs.com/svg.latex?v_{XY}
+
+nMOS: ![v_GS], ![v_DS]; pMOS: ![v_SG], ![v_SD]
+
+***Trucco Mnemonico***:
 
 * Il **S**ource è sempre dov'è la corrente.
 * Il **G**ate sempre la sbarra.
