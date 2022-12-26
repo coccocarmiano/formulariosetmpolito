@@ -140,8 +140,8 @@ Questo valore è pari alla costante strumentale moltiplicata per valor medio del
 | Diodo                  | Valori                                      |
 | ---------------------- | ------------------------------------------- |
 | **Diodo Reale**        | ![Diodo Reale]                              |
-| **Diodo Ideale**       | ![Diodo Ideale] (nel circuito: generatore)  |
-| **Diodo Semi-Ideale**  | ![Diodo Semi-Ideale] (nel circuito: corto)  |
+| **Diodo Ideale**       | ![Diodo Ideale] (nel circuito: corto circuito)  |
+| **Diodo Semi-Ideale**  | ![Diodo Semi-Ideale] (nel circuito: generatore ideale di tensione V_\gamma)  |
 
 [PD]: https://latex.codecogs.com/svg.latex?v_D%20%3E%200,%20i_D%20%5Cto%20%5Cinfty
 [Curva verticale]: https://latex.codecogs.com/svg.latex?v_D%20%3E%20V_%5Cgamma%20%5Csimeq%200.6-0.7%20%5C%20V
