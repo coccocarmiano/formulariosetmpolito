@@ -280,7 +280,7 @@ Con ![Condizioni](https://latex.codecogs.com/svg.latex?R_%7Bout%7D%20%3D%200):
 
 [Circuito Eq. in Linearità]: https://latex.codecogs.com/svg.latex?v_%7Bout%7D%20%3D%20A_dv_d%20+A_%7Bcm%7Dv_%7Bcm%7D+A_%7Bps%7Dv_%7Bps%7D
 [Amplificazione Differenziale Finita]: https://latex.codecogs.com/svg.latex?A_v%20%3D%20%5Cfrac%7B%5Cbeta%20A_d%7D%7B1+%5Cbeta%20A_d%7D%5Cfrac%7B1%7D%7B%5Cbeta%7D%20%3D%20%5Cfrac%7B1%7D%7B%5Cbeta%7D$%20se%20$A_d%20%5Cto%20%5Cinfty
-[Prodotto Banda-Guadagno]: https://latex.codecogs.com/svg.latex?B%20%3D%20%5Cbeta%20f_T
+[Prodotto Banda-Guadagno]: https://latex.codecogs.com/svg.latex?f_T%20%3D%20%5Cfrac%7BB%7D%7B%5Cbeta%7D
 [Parametro Beta]: https://latex.codecogs.com/svg.latex?%5Cbeta%20%3D%20-%5Cfrac%7Bv_d%7D%7B%5Chat%7Be%7D%7D%20%3D%20-%5Cfrac%7Bv_d%7D%7BA_dv_d%20+%20A_%7Bcm%7Dv_%7Bcm%7D%20+%20...%7D
 
 | -                                          | Formula                                 |
